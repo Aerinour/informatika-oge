@@ -23,343 +23,252 @@
         * { box-sizing: border-box; }
 
         body {
-            margin: 0; padding: 0;
+            margin: 0; padding: 20px;
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             background-color: var(--bg-color); color: var(--text-color);
             display: flex; flex-direction: column; align-items: center;
             min-height: 100vh;
         }
 
-        .page-header {
-            width: 100%; max-width: 1400px;
-            padding: 20px 20px 10px;
-            display: flex; align-items: center; justify-content: space-between;
+        .container {
+            width: 100%; max-width: 900px;
         }
 
-        h1 {
-            margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.5px;
-            background: linear-gradient(90deg, #6366f1, #a855f7);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        .header {
+            text-align: center; margin-bottom: 25px;
+            padding: 20px; background: var(--oge-bg);
+            border: 1px solid var(--oge-color); border-radius: 12px;
         }
 
-        .page-body {
-            display: flex; gap: 20px; width: 100%; max-width: 1400px;
-            padding: 0 20px 20px; flex: 1;
-        }
+        .header h1 { margin: 0; color: var(--oge-color); font-size: 24px; }
 
-        /* Боковая панель выбора номеров ОГЭ */
-        .sidebar {
-            flex: 0 0 320px;
-            background: var(--panel-bg); border: 1px solid var(--border-color);
-            border-radius: 12px; padding: 16px;
-            display: flex; flex-direction: column; gap: 8px;
-            max-height: calc(100vh - 100px); overflow-y: auto;
-        }
-
-        .sidebar-title {
-            font-size: 14px; font-weight: 700; color: #a1a1aa;
-            text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;
+        /* Панель переключения тем ОГЭ */
+        .topics-bar {
+            display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px;
+            justify-content: center;
         }
 
         .topic-btn {
-            background: #232329; color: var(--text-color); text-align: left;
-            border: 1px solid transparent; padding: 12px; border-radius: 8px;
-            cursor: pointer; font-size: 13px; line-height: 1.4; transition: all 0.2s;
-            display: flex; gap: 10px; align-items: flex-start;
+            background: var(--panel-bg); color: var(--text-color);
+            border: 1px solid var(--border-color); padding: 10px 14px;
+            border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.2s;
         }
 
-        .topic-btn:hover { background: #2d2d35; border-color: #3f3f46; }
-        
-        .topic-btn.active {
-            background: var(--oge-bg); border-color: var(--oge-color);
-            color: #f3e8ff; font-weight: 600;
-        }
+        .topic-btn:hover { border-color: var(--accent-color); }
+        .topic-btn.active { background: var(--accent-color); border-color: var(--accent-color); }
 
-        .topic-num {
-            background: var(--border-color); padding: 2px 6px; border-radius: 4px;
-            font-size: 11px; font-weight: 700; color: #a1a1aa;
-        }
-        .topic-btn.active .topic-num { background: var(--oge-color); color: #fff; }
-
-        /* Главная рабочая область */
-        .main-content {
-            flex: 1; display: flex; flex-direction: column; gap: 16px; min-width: 0;
-        }
-
-        .panel {
-            background: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 12px;
-            padding: 24px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-            display: flex; flex-direction: column; flex: 1;
+        /* Карточка задачи */
+        .task-card {
+            background: var(--panel-bg); border: 1px solid var(--border-color);
+            border-radius: 12px; padding: 30px; margin-bottom: 20px;
         }
 
         .task-header {
             display: flex; justify-content: space-between; align-items: center;
-            border-bottom: 1px solid var(--border-color); padding-bottom: 14px; margin-bottom: 16px;
-            flex-wrap: wrap; gap: 12px;
+            border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;
         }
 
-        .task-title-text { font-size: 18px; font-weight: 700; color: #fff; }
-
-        .variant-selector-wrap { display: flex; align-items: center; gap: 8px; }
-
-        select {
-            background: #27272a; color: #fff; border: 1px solid #3f3f46;
-            padding: 8px 12px; border-radius: 6px; font-weight: 600; outline: none; cursor: pointer;
+        .task-num {
+            background: var(--oge-bg); color: var(--oge-color);
+            padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 14px;
         }
 
-        /* Контейнер задания (картинка сверху, текст снизу) */
-        .task-container {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            background: var(--editor-bg); padding: 20px; border-radius: 8px;
-            border: 1px solid #27272a; margin-bottom: 20px; flex: 1;
-            overflow-y: auto;
+        .topic-title { font-size: 16px; color: #94a3b8; font-weight: 500; }
+
+        .task-text { font-size: 18px; line-height: 1.6; margin-bottom: 25px; }
+        .task-text b { color: #fff; }
+
+        .task-img {
+            max-width: 100%; height: auto; border-radius: 8px;
+            margin-bottom: 20px; border: 1px solid var(--border-color);
         }
 
-        .task-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
-            align-self: flex-start;
-            display: none; /* Скрыто по умолчанию, включается через JS */
-        }
-
-        .task-body {
-            font-size: 16px; line-height: 1.7; color: #cbd5e1;
-        }
-
-        /* Интерактивная зона ответа */
+        /* Поле ввода ответа */
         .answer-block {
-            background: #1e1e24; border: 1px solid var(--border-color);
-            border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 12px;
-            margin-bottom: 20px;
+            display: flex; gap: 12px; margin-bottom: 20px; max-width: 400px;
         }
 
-        .input-row { display: flex; gap: 12px; flex-wrap: wrap; }
-
-        input[type="text"] {
-            flex: 1; min-width: 200px; background: var(--editor-bg); border: 1px solid #3f3f46;
-            border-radius: 6px; padding: 12px; color: #fff; font-size: 15px;
-            font-family: 'Fira Code', monospace; outline: none; transition: border-color 0.2s;
+        .input-field {
+            flex: 1; background: var(--editor-bg); border: 1px solid var(--border-color);
+            color: #fff; padding: 12px; border-radius: 8px; font-size: 16px; outline: none;
         }
-        input[type="text"]:focus { border-color: var(--accent-color); }
+        .input-field:focus { border-color: var(--accent-color); }
 
-        button {
-            background-color: var(--accent-color); color: white; border: none;
-            padding: 12px 20px; border-radius: 6px; cursor: pointer;
-            font-weight: 600; font-size: 14px; transition: all 0.2s ease;
+        .btn {
+            padding: 12px 20px; border-radius: 8px; border: none; font-weight: 600;
+            cursor: pointer; transition: background 0.2s; font-size: 15px;
         }
-        button:hover { background-color: var(--accent-hover); transform: translateY(-1px); }
-        
-        button.btn-secondary { background-color: #27272a; border: 1px solid #3f3f46; color: #d4d4d8; }
-        button.btn-secondary:hover { background-color: #3f3f46; color: #fff; }
+        .btn-primary { background: var(--accent-color); color: #fff; }
+        .btn-primary:hover { background: var(--accent-hover); }
+        .btn-secondary { background: #27272a; color: var(--text-color); }
+        .btn-secondary:hover { background: #3f3f46; }
 
-        button.btn-hint { background-color: #3f2d13; border: 1px solid #78350f; color: #f59e0b; }
-        button.btn-hint:hover { background-color: #78350f; color: #fff; }
-
+        /* Сообщения */
         .result-msg {
-            font-size: 14px; font-weight: 600; padding: 10px; border-radius: 6px;
-            display: none;
+            padding: 12px; border-radius: 8px; font-weight: 500; margin-bottom: 20px; display: none;
         }
-        .result-msg.success { background: rgba(16, 185, 129, 0.15); color: var(--success-color); border: 1px solid rgba(16, 185, 129, 0.3); }
-        .result-msg.error { background: rgba(239, 68, 68, 0.15); color: var(--error-color); border: 1px solid rgba(239, 68, 68, 0.3); }
-        .result-msg.hint { background: rgba(245, 158, 11, 0.15); color: var(--hint-color); border: 1px solid rgba(245, 158, 11, 0.3); }
+        .success { background: #064e3b; color: #10b981; border: 1px solid #10b981; }
+        .error { background: #7f1d1d; color: #ef4444; border: 1px solid #ef4444; }
+        .hint { background: #78350f; color: #f59e0b; border: 1px solid #f59e0b; }
 
-        /* Нижняя панель навигации */
-        .navigation-footer {
-            display: flex; justify-content: space-between; align-items: center;
-        }
-
-        .badge { padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; text-transform: uppercase; background: var(--oge-color); color: white; }
-
-        /* Адаптивность для мобильных */
-        @media (max-width: 768px) {
-            .page-body { flex-direction: column; padding: 0 10px 10px; }
-            .sidebar { max-height: 180px; flex: none; }
-            .panel { padding: 16px; }
-            .task-header { flex-direction: column; align-items: flex-start; }
-            .input-row { flex-direction: column; }
-            button { width: 100%; text-align: center; }
-        }
+        /* Нижняя навигация */
+        .nav-actions { display: flex; justify-content: space-between; }
     </style>
 </head>
 <body>
 
-    <div class="page-header">
-        <h1>Тренажёр ОГЭ по информатике</h1>
-        <span class="badge">Тесты 1 — 10</span>
+<div class="container">
+    <div class="header">
+        <h1>Тренажёр подготовки к ОГЭ по информатике</h1>
     </div>
 
-    <div class="page-body">
-        <!-- Левый сайдбар: Список номеров заданий -->
-        <div class="sidebar" id="sidebarTopics">
-            <div class="sidebar-title">Номера заданий</div>
+    <div class="topics-bar" id="topicsBar"></div>
+
+    <div class="task-card" id="taskCard" style="display:none;">
+        <div class="task-header">
+            <span class="topic-title" id="topicTitle">Тема</span>
+            <span class="task-num" id="taskNum">Задание 1.1</span>
         </div>
 
-        <!-- Центральный контент -->
-        <div class="main-content">
-            <div class="panel">
-                <div class="task-header">
-                    <div class="task-title-text" id="taskTitle">Загрузка...</div>
-                    <div class="variant-selector-wrap">
-                        <span style="font-size: 13px; color: #a1a1aa;">Другие задачи номера:</span>
-                        <select id="variantSelect" onchange="switchVariant(this.value)">
-                        </select>
-                    </div>
-                </div>
+        <img id="taskImage" class="task-img" src="" alt="Иллюстрация к заданию" style="display:none;">
+        <div class="task-text" id="taskText">Текст задания загружается...</div>
 
-                <!-- Контейнер задания (Картинка сверху, Текст снизу) -->
-                <div class="task-container">
-                    <img id="taskImg" class="task-image" src="" alt="Иллюстрация к заданию">
-                    <div class="task-body" id="taskText">
-                        Выберите задание из списка слева для начала тестирования.
-                    </div>
-                </div>
+        <div class="answer-block">
+            <input type="text" id="userAnswer" class="input-field" placeholder="Введите ответ...">
+            <button class="btn btn-primary" onclick="checkAnswer()">Проверить</button>
+        </div>
 
-                <!-- Интерактивный блок ответа -->
-                <div class="answer-block">
-                    <div style="font-size: 14px; font-weight: 600; color: #a1a1aa;">Ваш ответ на задание:</div>
-                    <div class="input-row">
-                        <input type="text" id="answerInput" placeholder="Введите число или текст словом..." autocomplete="off">
-                        <button onclick="checkAnswer()">Проверить ответ</button>
-                        <button class="btn-hint" onclick="showAnswer()">Показать ответ</button>
-                    </div>
-                    <div id="resultMsg" class="result-msg"></div>
-                </div>
+        <div id="resultMsg" class="result-msg"></div>
 
-                <!-- Нижние кнопки навигации -->
-                <div class="navigation-footer">
-                    <button class="btn-secondary" id="btnPrev" onclick="navigateTask(-1)">← Назад</button>
-                    <button class="btn-secondary" id="btnNext" onclick="navigateTask(1)">Следующее →</button>
-                </div>
-            </div>
+        <div class="nav-actions">
+            <button class="btn btn-secondary" onclick="navigateTask(-1)">⬅ Назад</button>
+            <button class="btn btn-secondary" onclick="showAnswer()">💡 Показать ответ</button>
+            <button class="btn btn-secondary" onclick="navigateTask(1)">Вперед ➡</button>
         </div>
     </div>
+    
+    <div id="errorCard" class="task-card" style="text-align:center; color:var(--error-color); display:none;">
+        <h3>Ошибка загрузки базы данных!</h3>
+        <p>Убедитесь, что файл <b>tasks.js</b> находится в той же папке и не содержит синтаксических ошибок.</p>
+    </div>
+</div>
 
-    <!-- Подключаем внешнюю базу данных -->
-    <script src="tasks.js"></script>
-    <script>
-        let currentTopic = 1;
-        let currentVariantIndex = 0;
+<script src="tasks.js"></script>
 
-        // Инициализация интерфейса сайта
-        function initSite() {
-            if (typeof database === 'undefined') {
-                document.getElementById('taskText').innerHTML = "<span style='color:var(--error-color)'>Ошибка: Файл 'database.js' не найден или не загрузился! Убедитесь, что оба файла лежат в одной папке.</span>";
-                return;
-            }
-            
-            const sidebar = document.getElementById('sidebarTopics');
-            sidebar.innerHTML = '<div class="sidebar-title">Номера заданий</div>';
-            
-            for (let i = 1; i <= 10; i++) {
-                if (!database[i]) continue;
+<script>
+    let currentTopic = 1;
+    let currentVariantIndex = 0;
+
+    function initSite() {
+        if (typeof database === 'undefined') {
+            document.getElementById('errorCard').style.display = 'block';
+            return;
+        }
+        
+        // Генерируем кнопки тем 1-10 автоматически
+        const bar = document.getElementById('topicsBar');
+        for (let i = 1; i <= 10; i++) {
+            if (database[i]) {
                 const btn = document.createElement('button');
-                btn.className = `topic-btn ${i === currentTopic ? 'active' : ''}`;
+                btn.className = `topic-btn ${i === 1 ? 'active' : ''}`;
+                btn.innerText = `№ ${i}`;
                 btn.id = `btn-topic-${i}`;
                 btn.onclick = () => selectTopic(i);
-                btn.innerHTML = `<span class="topic-num">№ ${i}</span> <span>${database[i].title.split('. ')[1]}</span>`;
-                sidebar.appendChild(btn);
+                bar.appendChild(btn);
             }
-            loadTask(currentTopic, 0);
+        }
+        
+        document.getElementById('taskCard').style.display = 'block';
+        selectTopic(1);
+    }
+
+    function selectTopic(topicId) {
+        // Меняем активную кнопку темы
+        document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
+        const activeBtn = document.getElementById(`btn-topic-${topicId}`);
+        if (activeBtn) activeBtn.classList.add('active');
+
+        currentTopic = topicId;
+        currentVariantIndex = 0;
+        loadTask(currentTopic, currentVariantIndex);
+    }
+
+    function loadTask(topicId, variantIndex) {
+        const topic = database[topicId];
+        if (!topic || !topic.variants || topic.variants.length === 0) {
+            document.getElementById('taskText').innerHTML = "В этой теме пока нет доступных задач.";
+            document.getElementById('taskNum').innerText = `№ ${topicId}`;
+            return;
         }
 
-        // Выбор темы из сайдбара
-        function selectTopic(topicId) {
-            document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
-            const activeBtn = document.getElementById(`btn-topic-${topicId}`);
-            if (activeBtn) activeBtn.classList.add('active');
-            currentTopic = topicId;
-            currentVariantIndex = 0;
+        const task = topic.variants[variantIndex];
+        
+        // Автоматическая подстановка номеров вида 1.1, 1.2, 5.14 и т.д.
+        document.getElementById('taskNum').innerText = `Задание ${topicId}.${variantIndex + 1}`;
+        document.getElementById('topicTitle').innerText = topic.title;
+        document.getElementById('taskText').innerHTML = task.text;
+
+        // Работа с изображениями
+        const img = document.getElementById('taskImage');
+        if (task.image) {
+            img.src = task.image;
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+
+        // Очистка состояния
+        document.getElementById('userAnswer').value = '';
+        const msg = document.getElementById('resultMsg');
+        msg.style.display = 'none';
+    }
+
+    function checkAnswer() {
+        const userAns = document.getElementById('userAnswer').value.trim().toLowerCase();
+        const correctAns = database[currentTopic].variants[currentVariantIndex].answer.toString().trim().toLowerCase();
+        const msg = document.getElementById('resultMsg');
+        
+        msg.style.display = 'block';
+        if (userAns === correctAns) {
+            msg.innerText = "Правильно! Отличный результат. ✅";
+            msg.className = "result-msg success";
+        } else {
+            msg.innerText = "Неверно. Проверьте свои расчеты. ❌";
+            msg.className = "result-msg error";
+        }
+    }
+
+    function showAnswer() {
+        const correctAns = database[currentTopic].variants[currentVariantIndex].answer;
+        const msg = document.getElementById('resultMsg');
+        msg.style.display = 'block';
+        msg.innerHTML = `Правильный ответ: <b>${correctAns}</b> 💡`;
+        msg.className = "result-msg hint";
+    }
+
+    function navigateTask(direction) {
+        const topic = database[currentTopic];
+        if (!topic || !topic.variants) return;
+
+        // Переключение внутри текущей темы
+        if (currentVariantIndex + direction >= 0 && currentVariantIndex + direction < topic.variants.length) {
+            currentVariantIndex += direction;
             loadTask(currentTopic, currentVariantIndex);
-        }
-
-        // Загрузка конкретного задания на экран
-        function loadTask(topicId, variantIdx) {
-            const topic = database[topicId];
-            const task = topic.variants[variantIdx];
-            
-            document.getElementById('taskTitle').innerText = topic.title;
-            document.getElementById('taskText').innerHTML = task.text;
-            
-            // Логика отображения картинки (сверху, если есть в базе данных)
-            const imgElement = document.getElementById('taskImg');
-            if (task.image) {
-                imgElement.src = task.image;
-                imgElement.style.display = 'block';
-            } else {
-                imgElement.src = '';
-                imgElement.style.display = 'none';
-            }
-            
-            // Очистка поля ввода и сообщений
-            document.getElementById('answerInput').value = '';
-            const msg = document.getElementById('resultMsg');
-            msg.style.display = 'none';
-            msg.className = 'result-msg';
-
-            // Обновление селектора вариантов
-            const select = document.getElementById('variantSelect');
-            select.innerHTML = '';
-            topic.variants.forEach((v, index) => {
-                const opt = document.createElement('option');
-                opt.value = index;
-                opt.innerText = `Вариант ${index + 1}`;
-                if (index === variantIdx) opt.selected = true;
-                select.appendChild(opt);
-            });
-        }
-
-        // Переключение варианта через выпадающий список
-        function switchVariant(idx) {
-            currentVariantIndex = parseInt(idx);
-            loadTask(currentTopic, currentVariantIndex);
-        }
-
-        // Проверка ответа пользователя
-        function checkAnswer() {
-            const userAns = document.getElementById('answerInput').value.trim().toLowerCase();
-            const correctAns = database[currentTopic].variants[currentVariantIndex].answer.trim().toLowerCase();
-            const msg = document.getElementById('resultMsg');
-
-            msg.style.display = 'block';
-            if (userAns === correctAns) {
-                msg.innerText = "Правильно! Великолепный результат. ✅";
-                msg.className = "result-msg success";
-            } else {
-                msg.innerText = "Неверно. Попробуйте еще раз проверить свои расчеты. ❌";
-                msg.className = "result-msg error";
-            }
-        }
-
-        // Функция показать правильный ответ
-        function showAnswer() {
-            const correctAns = database[currentTopic].variants[currentVariantIndex].answer;
-            const msg = document.getElementById('resultMsg');
-            msg.style.display = 'block';
-            msg.innerHTML = `Правильный ответ: <b>${correctAns}</b> 💡`;
-            msg.className = "result-msg hint";
-        }
-
-        // Кнопки навигации: Назад / Следующее
-        function navigateTask(direction) {
-            const topic = database[currentTopic];
-            
-            if (currentVariantIndex + direction >= 0 && currentVariantIndex + direction < topic.variants.length) {
-                currentVariantIndex += direction;
-                loadTask(currentTopic, currentVariantIndex);
-            } else {
-                let nextTopic = currentTopic + direction;
-                if (nextTopic >= 1 && nextTopic <= 10) {
-                    selectTopic(nextTopic);
+        } else {
+            // Переход на следующую/предыдущую тему, если задачи кончились
+            let nextTopic = currentTopic + direction;
+            if (database[nextTopic]) {
+                selectTopic(nextTopic);
+                if (direction === -1) {
+                    // Если шли назад, открываем последнюю задачу предыдущей темы
+                    currentVariantIndex = database[nextTopic].variants.length - 1;
+                    loadTask(currentTopic, currentVariantIndex);
                 }
             }
         }
+    }
 
-        // Запуск при загрузке страницы
-        window.onload = initSite;
-    </script>
+    window.onload = initSite;
+</script>
 </body>
 </html>
