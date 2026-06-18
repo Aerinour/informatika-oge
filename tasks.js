@@ -114,4 +114,3 @@ else:
         ]
     }
 };
-var database = taskDatabase;
