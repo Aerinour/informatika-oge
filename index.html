@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Подготовка к ОГЭ по информатике</title>
     <style>
-        :root {
+        /* ====== ПЕРЕМЕННЫЕ ТЕМ ====== */
+        :root[data-theme="dark"] {
             --bg-color: #121214;
             --panel-bg: #1a1a1e;
             --editor-bg: #0f0f11;
             --text-color: #e2e8f0;
+            --muted-color: #94a3b8;
             --accent-color: #6366f1;
             --accent-hover: #4f46e5;
             --error-color: #ef4444;
@@ -18,176 +20,317 @@
             --oge-color: #a855f7;
             --oge-bg: #23153c;
             --border-color: #27272a;
+            --btn-secondary-bg: #27272a;
+            --btn-secondary-hover: #3f3f46;
+            --scrollbar-track: #0f0f11;
+            --scrollbar-thumb: #3f3f46;
+            --search-result-hover: #27272a;
+            --card-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        }
+        :root[data-theme="light"] {
+            --bg-color: #f0f2f7;
+            --panel-bg: #ffffff;
+            --editor-bg: #f8fafc;
+            --text-color: #1e293b;
+            --muted-color: #64748b;
+            --accent-color: #6366f1;
+            --accent-hover: #4f46e5;
+            --error-color: #dc2626;
+            --success-color: #059669;
+            --hint-color: #d97706;
+            --oge-color: #9333ea;
+            --oge-bg: #f3e8ff;
+            --border-color: #e2e8f0;
+            --btn-secondary-bg: #e2e8f0;
+            --btn-secondary-hover: #cbd5e1;
+            --scrollbar-track: #e2e8f0;
+            --scrollbar-thumb: #cbd5e1;
+            --search-result-hover: #f1f5f9;
+            --card-shadow: 0 4px 24px rgba(0,0,0,0.08);
         }
 
         * { box-sizing: border-box; }
 
         body {
-            margin: 0; padding: 20px;
+            margin: 0; padding: 16px;
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-color); color: var(--text-color);
+            background-color: var(--bg-color);
+            color: var(--text-color);
             display: flex; flex-direction: column; align-items: center;
             min-height: 100vh;
+            transition: background 0.3s, color 0.3s;
         }
 
-        .container {
-            width: 100%; max-width: 900px;
-        }
+        .container { width: 100%; max-width: 900px; }
 
+        /* ====== ШАПКА ====== */
         .header {
-            text-align: center; margin-bottom: 20px;
-            padding: 20px; background: var(--oge-bg);
-            border: 1px solid var(--oge-color); border-radius: 12px;
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 12px; margin-bottom: 16px;
+            padding: 16px 20px;
+            background: var(--oge-bg);
+            border: 1px solid var(--oge-color);
+            border-radius: 14px;
+            box-shadow: var(--card-shadow);
         }
-
-        .header h1 { margin: 0; color: var(--oge-color); font-size: 24px; }
-
-        /* Панель поиска */
-        .search-bar {
-            display: flex; gap: 10px; margin-bottom: 20px;
+        .header-title { 
+            margin: 0; color: var(--oge-color); 
+            font-size: clamp(15px, 3vw, 20px); 
+            font-weight: 700; flex: 1; 
         }
-        .search-bar input { flex: 1; }
+        .header-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+
+        /* ====== ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ ====== */
+        .theme-toggle {
+            background: var(--btn-secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50%; width: 40px; height: 40px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; font-size: 18px;
+            transition: background 0.2s, transform 0.2s;
+            flex-shrink: 0;
+        }
+        .theme-toggle:hover { background: var(--btn-secondary-hover); transform: scale(1.1); }
+
+        /* ====== СТАТИСТИКА ПРОГРЕССА ====== */
+        .stats-bar {
+            display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;
+        }
+        .stat-chip {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            padding: 6px 14px; border-radius: 20px;
+            font-size: 13px; font-weight: 600;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .stat-chip .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .dot-green { background: var(--success-color); }
+        .dot-purple { background: var(--oge-color); }
+
+        /* ====== ПОИСК ====== */
+        .search-bar { display: flex; gap: 10px; margin-bottom: 14px; }
+        .search-bar input { flex: 1; min-width: 0; }
 
         .search-results {
             background: var(--panel-bg); border: 1px solid var(--accent-color);
-            border-radius: 12px; padding: 15px; margin-bottom: 20px;
+            border-radius: 12px; padding: 14px; margin-bottom: 14px;
             max-height: 200px; overflow-y: auto; display: none;
+            box-shadow: var(--card-shadow);
         }
-        .search-results h4 { margin-top: 0; margin-bottom: 10px; color: var(--accent-color); }
+        .search-results h4 { margin: 0 0 10px; color: var(--accent-color); font-size: 14px; }
         .search-result-item {
             padding: 10px; border-bottom: 1px solid var(--border-color); cursor: pointer;
-            transition: background 0.2s; border-radius: 6px;
+            transition: background 0.15s; border-radius: 6px; font-size: 14px;
         }
-        .search-result-item:hover { background: #27272a; }
+        .search-result-item:hover { background: var(--search-result-hover); }
         .search-result-item:last-child { border-bottom: none; }
 
-        /* Панель основных тем ОГЭ (1-10) */
+        /* ====== ТЕМЫ (1–10) ====== */
         .topics-bar {
-            display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;
-            justify-content: center;
+            display: flex; flex-wrap: wrap; gap: 8px;
+            margin-bottom: 12px; justify-content: center;
         }
-
         .topic-btn {
             background: var(--panel-bg); color: var(--text-color);
-            border: 1px solid var(--border-color); padding: 10px 14px;
-            border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.2s;
+            border: 1px solid var(--border-color); padding: 8px 14px;
+            border-radius: 8px; cursor: pointer; font-weight: 700;
+            font-size: 14px; transition: all 0.2s; position: relative;
+        }
+        .topic-btn:hover { border-color: var(--accent-color); }
+        .topic-btn.active { background: var(--accent-color); border-color: var(--accent-color); color: #fff; }
+        .topic-progress {
+            position: absolute; bottom: 0; left: 0; height: 3px;
+            background: var(--success-color); border-radius: 0 0 8px 8px;
+            transition: width 0.4s ease;
         }
 
-        .topic-btn:hover { border-color: var(--accent-color); }
-        .topic-btn.active { background: var(--accent-color); border-color: var(--accent-color); }
-
-        /* Улучшенная панель подномеров (скроллбар) */
+        /* ====== ВАРИАНТЫ ====== */
         .variants-container {
-            background: #1a1a1e; border: 1px solid var(--border-color);
-            border-radius: 12px; padding: 15px; margin-bottom: 25px;
+            background: var(--panel-bg); border: 1px solid var(--border-color);
+            border-radius: 12px; padding: 12px; margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
         }
         .variants-bar {
             display: flex; flex-wrap: wrap; gap: 8px;
-            justify-content: flex-start;
-            max-height: 130px; /* Ограничиваем высоту */
-            overflow-y: auto;  /* Включаем прокрутку */
-            padding-right: 10px;
+            max-height: 130px; overflow-y: auto; padding-right: 4px;
         }
-        
-        /* Стилизация скроллбара */
-        .variants-bar::-webkit-scrollbar, .search-results::-webkit-scrollbar { width: 8px; }
-        .variants-bar::-webkit-scrollbar-track, .search-results::-webkit-scrollbar-track { background: var(--bg-color); border-radius: 4px; }
-        .variants-bar::-webkit-scrollbar-thumb, .search-results::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
-        .variants-bar::-webkit-scrollbar-thumb:hover, .search-results::-webkit-scrollbar-thumb:hover { background: var(--accent-color); }
+        .variants-bar::-webkit-scrollbar, .search-results::-webkit-scrollbar { width: 6px; }
+        .variants-bar::-webkit-scrollbar-track, .search-results::-webkit-scrollbar-track { background: var(--scrollbar-track); border-radius: 4px; }
+        .variants-bar::-webkit-scrollbar-thumb, .search-results::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+        .variants-bar::-webkit-scrollbar-thumb:hover { background: var(--accent-color); }
 
         .variant-btn {
-            background: #27272a; color: var(--text-color);
-            border: 1px solid transparent; padding: 6px 12px;
-            border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s;
-            flex: 0 0 auto;
+            background: var(--btn-secondary-bg); color: var(--text-color);
+            border: 1px solid transparent; padding: 6px 11px;
+            border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600;
+            transition: all 0.15s; flex: 0 0 auto; position: relative;
         }
-
         .variant-btn:hover { border-color: var(--oge-color); }
-        .variant-btn.active { 
-            background: var(--oge-bg); 
-            color: var(--oge-color); 
-            border-color: var(--oge-color); 
+        .variant-btn.active {
+            background: var(--oge-bg); color: var(--oge-color); border-color: var(--oge-color);
         }
+        .variant-btn.solved::after {
+            content: '✓';
+            position: absolute; top: -5px; right: -5px;
+            background: var(--success-color); color: #fff;
+            font-size: 9px; font-weight: 800;
+            width: 16px; height: 16px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .variant-btn.solved { border-color: var(--success-color); }
 
-        /* Карточка задачи */
+        /* ====== КАРТОЧКА ЗАДАЧИ ====== */
         .task-card {
             background: var(--panel-bg); border: 1px solid var(--border-color);
-            border-radius: 12px; padding: 30px; margin-bottom: 20px;
+            border-radius: 14px; padding: 24px; margin-bottom: 16px;
+            box-shadow: var(--card-shadow);
+            transition: border-color 0.3s;
+        }
+        .task-card.flash-success {
+            animation: flashSuccess 0.6s ease;
+        }
+        .task-card.flash-error {
+            animation: flashError 0.5s ease;
+        }
+        @keyframes flashSuccess {
+            0%   { border-color: var(--border-color); box-shadow: var(--card-shadow); }
+            30%  { border-color: var(--success-color); box-shadow: 0 0 0 4px rgba(16,185,129,0.2); }
+            100% { border-color: var(--border-color); box-shadow: var(--card-shadow); }
+        }
+        @keyframes flashError {
+            0%   { border-color: var(--border-color); transform: translateX(0); }
+            15%  { border-color: var(--error-color); box-shadow: 0 0 0 4px rgba(239,68,68,0.2); transform: translateX(-6px); }
+            30%  { transform: translateX(6px); }
+            45%  { transform: translateX(-4px); }
+            60%  { transform: translateX(4px); }
+            75%  { transform: translateX(-2px); }
+            100% { border-color: var(--border-color); transform: translateX(0); }
         }
 
         .task-header {
             display: flex; justify-content: space-between; align-items: center;
-            border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;
+            flex-wrap: wrap; gap: 8px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 14px; margin-bottom: 18px;
         }
-
         .task-num {
             background: var(--oge-bg); color: var(--oge-color);
-            padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 14px;
+            padding: 4px 14px; border-radius: 20px; font-weight: 700; font-size: 13px;
         }
-
-        .topic-title { font-size: 16px; color: #94a3b8; font-weight: 500; }
-
-        .task-text { font-size: 18px; line-height: 1.6; margin-bottom: 25px; }
-        .task-text b { color: #fff; }
-
+        .topic-title { font-size: 14px; color: var(--muted-color); font-weight: 500; }
+        .task-text { font-size: 16px; line-height: 1.7; margin-bottom: 22px; }
+        .task-text b { color: var(--text-color); font-weight: 700; }
         .task-img {
             max-width: 100%; height: auto; border-radius: 8px;
-            margin-bottom: 20px; border: 1px solid var(--border-color);
+            margin-bottom: 18px; border: 1px solid var(--border-color);
         }
 
-        /* Поле ввода */
+        /* ====== ПОЛЕ ВВОДА ====== */
         .input-field {
             background: var(--editor-bg); border: 1px solid var(--border-color);
-            color: #fff; padding: 12px; border-radius: 8px; font-size: 16px; outline: none;
+            color: var(--text-color); padding: 11px 14px; border-radius: 8px;
+            font-size: 16px; outline: none; transition: border-color 0.2s;
+            font-family: inherit; width: 100%;
         }
         .input-field:focus { border-color: var(--accent-color); }
+        .input-field::placeholder { color: var(--muted-color); }
 
         .answer-block {
-            display: flex; gap: 12px; margin-bottom: 20px; max-width: 400px;
+            display: flex; gap: 10px; margin-bottom: 16px;
         }
-        .answer-block .input-field { flex: 1; }
+        .answer-block .input-field { flex: 1; width: auto; }
 
+        /* ====== КНОПКИ ====== */
         .btn {
-            padding: 12px 20px; border-radius: 8px; border: none; font-weight: 600;
-            cursor: pointer; transition: background 0.2s; font-size: 15px;
+            padding: 11px 18px; border-radius: 8px; border: none; font-weight: 600;
+            cursor: pointer; transition: all 0.2s; font-size: 14px; font-family: inherit;
+            white-space: nowrap;
         }
+        .btn:active { transform: scale(0.96); }
         .btn-primary { background: var(--accent-color); color: #fff; }
         .btn-primary:hover { background: var(--accent-hover); }
-        .btn-secondary { background: #27272a; color: var(--text-color); }
-        .btn-secondary:hover { background: #3f3f46; }
+        .btn-secondary { background: var(--btn-secondary-bg); color: var(--text-color); }
+        .btn-secondary:hover { background: var(--btn-secondary-hover); }
 
-        /* Сообщения */
+        /* ====== СООБЩЕНИЯ РЕЗУЛЬТАТА ====== */
         .result-msg {
-            padding: 12px; border-radius: 8px; font-weight: 500; margin-bottom: 20px; display: none;
+            padding: 12px 16px; border-radius: 8px; font-weight: 600;
+            margin-bottom: 18px; display: none;
+            animation: slideIn 0.25s ease;
         }
-        .success { background: #064e3b; color: #10b981; border: 1px solid #10b981; }
-        .error { background: #7f1d1d; color: #ef4444; border: 1px solid #ef4444; }
-        .hint { background: #78350f; color: #f59e0b; border: 1px solid #f59e0b; }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .success { background: rgba(16,185,129,0.12); color: var(--success-color); border: 1px solid var(--success-color); }
+        .error   { background: rgba(239,68,68,0.12);  color: var(--error-color);   border: 1px solid var(--error-color); }
+        .hint    { background: rgba(245,158,11,0.12); color: var(--hint-color);    border: 1px solid var(--hint-color); }
 
-        .nav-actions { 
-            display: grid; 
-            grid-template-columns: 1fr auto 1fr; 
-            gap: 10px;
-            align-items: center;
-            width: 100%;
+        /* ====== НАВИГАЦИЯ ====== */
+        .nav-actions {
+            display: grid; grid-template-columns: 1fr auto 1fr;
+            gap: 8px; align-items: center; width: 100%;
         }
-        .btn-left { justify-self: start; }
+        .btn-left  { justify-self: start; }
         .btn-center { justify-self: center; }
         .btn-right { justify-self: end; }
+
+        /* ====== КОНФЕТТИ ====== */
+        #confetti-canvas {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none; z-index: 9999;
+        }
+
+        /* ====== МОБИЛЬНАЯ АДАПТАЦИЯ ====== */
+        @media (max-width: 540px) {
+            body { padding: 10px; }
+            .header { padding: 12px 14px; }
+            .task-card { padding: 16px 14px; }
+            .task-text { font-size: 15px; }
+            .answer-block { flex-wrap: wrap; }
+            .answer-block .input-field { width: 100%; }
+            .answer-block .btn { width: 100%; }
+            .nav-actions { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 8px; }
+            .btn-left  { grid-column: 1; grid-row: 1; justify-self: stretch; }
+            .btn-right { grid-column: 2; grid-row: 1; justify-self: stretch; }
+            .btn-center { grid-column: 1 / -1; grid-row: 2; justify-self: stretch; }
+            .btn { text-align: center; }
+            .topics-bar { gap: 6px; }
+            .topic-btn { padding: 7px 10px; font-size: 13px; }
+        }
     </style>
 </head>
 <body>
 
+<canvas id="confetti-canvas"></canvas>
+
 <div class="container">
     <div class="header">
-        <h1>Тренажёр подготовки к ОГЭ по информатике</h1>
+        <h1 class="header-title">🖥️ Тренажёр ОГЭ по информатике</h1>
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" title="Переключить тему">🌙</button>
+        </div>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-chip">
+            <span class="dot dot-green"></span>
+            <span id="statSolved">0</span>&nbsp;решено
+        </div>
+        <div class="stat-chip">
+            <span class="dot dot-purple"></span>
+            <span id="statTotal">0</span>&nbsp;всего
+        </div>
+        <div class="stat-chip" id="statPercent" style="display:none;">
+            🏆 <span id="statPercentVal">0%</span>
+        </div>
     </div>
 
     <div class="search-bar">
-        <input type="text" id="searchInput" class="input-field" placeholder="Найти задание по ответу (например: 710 или пустые)...">
-        <button class="btn btn-primary" onclick="searchTask()">🔍 Найти</button>
+        <input type="text" id="searchInput" class="input-field" placeholder="Поиск по ответу (например: 710)...">
+        <button class="btn btn-primary" onclick="searchTask()">🔍</button>
     </div>
-    
     <div id="searchResults" class="search-results"></div>
 
     <div class="topics-bar" id="topicsBar"></div>
@@ -201,7 +344,6 @@
             <span class="topic-title" id="topicTitle">Тема</span>
             <span class="task-num" id="taskNum">Задание 1.1</span>
         </div>
-
         <img id="taskImage" class="task-img" src="" alt="Иллюстрация к заданию" style="display:none;">
         <div class="task-text" id="taskText">Текст задания загружается...</div>
 
@@ -214,210 +356,394 @@
 
         <div class="nav-actions">
             <button class="btn btn-secondary btn-left" onclick="navigateTask(-1)">⬅ Назад</button>
-            <button class="btn btn-secondary btn-center" onclick="showAnswer()">💡 Показать ответ</button>
-            <button class="btn btn-secondary btn-right" onclick="navigateTask(1)">Вперед ➡</button>
+            <button class="btn btn-secondary btn-center" onclick="showAnswer()">💡 Ответ</button>
+            <button class="btn btn-secondary btn-right" onclick="navigateTask(1)">Вперёд ➡</button>
         </div>
     </div>
-    
+
     <div id="errorCard" class="task-card" style="text-align:center; color:var(--error-color); display:none;">
         <h3>Ошибка загрузки базы данных!</h3>
-        <p>Убедитесь, что файл <b>tasks.js</b> находится в той же папке и не содержит синтаксических ошибок.</p>
+        <p>Убедитесь, что файл <b>tasks.js</b> находится в той же папке.</p>
     </div>
 </div>
 
 <script src="tasks.js"></script>
-
 <script>
-    let currentTopic = 1;
-    let currentVariantIndex = 0;
+// ============================================================
+// ЗВУКИ
+// ============================================================
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+function getAudio() {
+    if (!audioCtx) audioCtx = new AudioCtx();
+    return audioCtx;
+}
+function playTone(freq, type, duration, vol = 0.15) {
+    try {
+        const ctx = getAudio();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.type = type; osc.frequency.value = freq;
+        gain.gain.setValueAtTime(vol, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
+        osc.start(ctx.currentTime);
+        osc.stop(ctx.currentTime + duration);
+    } catch(e) {}
+}
+function soundSuccess() {
+    playTone(523, 'sine', 0.1);
+    setTimeout(() => playTone(659, 'sine', 0.1), 100);
+    setTimeout(() => playTone(784, 'sine', 0.18), 200);
+}
+function soundError() {
+    playTone(220, 'sawtooth', 0.15, 0.1);
+    setTimeout(() => playTone(196, 'sawtooth', 0.2, 0.08), 120);
+}
+function soundHint() {
+    playTone(440, 'sine', 0.12, 0.1);
+    setTimeout(() => playTone(349, 'sine', 0.15, 0.08), 130);
+}
 
-    function initSite() {
-        if (typeof database === 'undefined') {
-            document.getElementById('errorCard').style.display = 'block';
-            return;
-        }
-        
-        // Поиск при нажатии Enter
-        document.getElementById('searchInput').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                searchTask();
-            }
+// ============================================================
+// КОНФЕТТИ
+// ============================================================
+const confettiCanvas = document.getElementById('confetti-canvas');
+const confettiCtx = confettiCanvas.getContext('2d');
+let particles = [];
+let confettiRunning = false;
+
+function launchConfetti() {
+    confettiCanvas.width = window.innerWidth;
+    confettiCanvas.height = window.innerHeight;
+    const colors = ['#6366f1','#a855f7','#10b981','#f59e0b','#ef4444','#3b82f6','#ec4899'];
+    for (let i = 0; i < 120; i++) {
+        particles.push({
+            x: Math.random() * confettiCanvas.width,
+            y: -10 - Math.random() * 100,
+            w: 8 + Math.random() * 8,
+            h: 4 + Math.random() * 5,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            angle: Math.random() * Math.PI * 2,
+            spin: (Math.random() - 0.5) * 0.15,
+            vx: (Math.random() - 0.5) * 4,
+            vy: 2 + Math.random() * 4,
+            opacity: 1
         });
+    }
+    if (!confettiRunning) { confettiRunning = true; animateConfetti(); }
+}
+function animateConfetti() {
+    confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+    particles = particles.filter(p => p.opacity > 0.02);
+    particles.forEach(p => {
+        p.y += p.vy; p.x += p.vx; p.angle += p.spin;
+        if (p.y > confettiCanvas.height * 0.7) p.opacity -= 0.025;
+        confettiCtx.save();
+        confettiCtx.translate(p.x, p.y);
+        confettiCtx.rotate(p.angle);
+        confettiCtx.globalAlpha = p.opacity;
+        confettiCtx.fillStyle = p.color;
+        confettiCtx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+        confettiCtx.restore();
+    });
+    if (particles.length > 0) requestAnimationFrame(animateConfetti);
+    else confettiRunning = false;
+}
 
-        // Генерируем кнопки основных тем
-        const bar = document.getElementById('topicsBar');
-        for (let i = 1; i <= 10; i++) {
-            if (database[i]) {
-                const btn = document.createElement('button');
-                btn.className = `topic-btn ${i === 1 ? 'active' : ''}`;
-                btn.innerText = `№ ${i}`;
-                btn.id = `btn-topic-${i}`;
-                btn.onclick = () => selectTopic(i);
-                bar.appendChild(btn);
-            }
-        }
-        
-        document.getElementById('taskCard').style.display = 'block';
-        selectTopic(1); 
+// ============================================================
+// ТЕМА
+// ============================================================
+const themeToggle = document.getElementById('themeToggle');
+let isDark = true;
+function applyTheme(dark) {
+    isDark = dark;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    themeToggle.textContent = dark ? '🌙' : '☀️';
+    localStorage.setItem('oge_theme', dark ? 'dark' : 'light');
+}
+themeToggle.addEventListener('click', () => applyTheme(!isDark));
+// Восстановить тему
+(function() {
+    const saved = localStorage.getItem('oge_theme');
+    applyTheme(saved !== 'light');
+})();
+
+// ============================================================
+// ПРОГРЕСС (localStorage)
+// ============================================================
+function getSolvedSet() {
+    try { return new Set(JSON.parse(localStorage.getItem('oge_solved') || '[]')); }
+    catch(e) { return new Set(); }
+}
+function saveSolvedSet(set) {
+    localStorage.setItem('oge_solved', JSON.stringify([...set]));
+}
+function markSolved(topicId, variantIndex) {
+    const set = getSolvedSet();
+    set.add(`${topicId}_${variantIndex}`);
+    saveSolvedSet(set);
+}
+function isSolved(topicId, variantIndex) {
+    return getSolvedSet().has(`${topicId}_${variantIndex}`);
+}
+function updateStats() {
+    const solved = getSolvedSet();
+    let total = 0;
+    for (let k in database) {
+        if (database[k].variants) total += database[k].variants.length;
+    }
+    const solvedCount = solved.size;
+    document.getElementById('statSolved').textContent = solvedCount;
+    document.getElementById('statTotal').textContent = total;
+    const pct = document.getElementById('statPercent');
+    if (solvedCount > 0) {
+        pct.style.display = 'flex';
+        document.getElementById('statPercentVal').textContent =
+            Math.round(solvedCount / total * 100) + '%';
+    }
+    // Обновить прогресс-бары кнопок тем
+    for (let k in database) {
+        const bar = document.getElementById(`progress-topic-${k}`);
+        if (!bar || !database[k].variants) continue;
+        const total = database[k].variants.length;
+        const done = database[k].variants.filter((_, i) => isSolved(parseInt(k), i)).length;
+        bar.style.width = (done / total * 100) + '%';
+    }
+}
+
+// ============================================================
+// СОСТОЯНИЕ
+// ============================================================
+let currentTopic = 1;
+let currentVariantIndex = 0;
+
+// ============================================================
+// ИНИЦИАЛИЗАЦИЯ
+// ============================================================
+function initSite() {
+    if (typeof database === 'undefined') {
+        document.getElementById('errorCard').style.display = 'block';
+        return;
     }
 
-    // Поиск задания по ответу
-    function searchTask() {
-        const query = document.getElementById('searchInput').value.trim().toLowerCase();
-        const resultsBox = document.getElementById('searchResults');
-        
-        if (!query) {
-            resultsBox.style.display = 'none';
-            return;
-        }
+    // Enter → проверить ответ
+    document.getElementById('userAnswer').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') checkAnswer();
+    });
+    // Enter → поиск
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') searchTask();
+    });
+    // Стрелки для навигации
+    document.addEventListener('keydown', function(e) {
+        if (document.activeElement === document.getElementById('userAnswer')) return;
+        if (document.activeElement === document.getElementById('searchInput')) return;
+        if (e.key === 'ArrowRight') navigateTask(1);
+        if (e.key === 'ArrowLeft')  navigateTask(-1);
+    });
 
-        let found = [];
-        
-        for (let topicId in database) {
-            if (!database[topicId].variants) continue;
-            database[topicId].variants.forEach((task, index) => {
-                const ans = task.answer.toString().trim().toLowerCase();
-                // Ищем точное совпадение или частичное, если это слово
-                if (ans === query) {
-                    found.push({ topicId: parseInt(topicId), index, title: database[topicId].title });
-                }
-            });
-        }
-
-        if (found.length > 0) {
-            resultsBox.innerHTML = `<h4>Найдено заданий с ответом «${query}»: ${found.length}</h4>`;
-            found.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'search-result-item';
-                div.innerHTML = `Перейти к <b>Заданию ${item.topicId}.${item.index + 1}</b> <span style="color:#94a3b8; font-size:14px;">(${item.title})</span>`;
-                div.onclick = () => {
-                    selectTopic(item.topicId);
-                    currentVariantIndex = item.index;
-                    loadTask(currentTopic, currentVariantIndex);
-                    resultsBox.style.display = 'none'; // Скрываем результаты после клика
-                    document.getElementById('searchInput').value = ''; // Очищаем поле поиска
-                };
-                resultsBox.appendChild(div);
-            });
-        } else {
-            resultsBox.innerHTML = `<p style="margin:0; color:var(--error-color);">Заданий с таким ответом не найдено.</p>`;
-        }
-        resultsBox.style.display = 'block';
-    }
-
-    function selectTopic(topicId) {
-        document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
-        const activeBtn = document.getElementById(`btn-topic-${topicId}`);
-        if (activeBtn) activeBtn.classList.add('active');
-
-        currentTopic = topicId;
-        currentVariantIndex = 0;
-
-        renderVariantButtons(topicId);
-        loadTask(currentTopic, currentVariantIndex);
-    }
-
-    function renderVariantButtons(topicId) {
-        const container = document.getElementById('variantsBar');
-        container.innerHTML = ''; 
-
-        const topic = database[topicId];
-        if (!topic || !topic.variants) return;
-
-        topic.variants.forEach((variant, index) => {
+    // Кнопки тем
+    const bar = document.getElementById('topicsBar');
+    for (let i = 1; i <= 10; i++) {
+        if (database[i]) {
             const btn = document.createElement('button');
-            btn.className = 'variant-btn';
-            btn.innerText = `${topicId}.${index + 1}`;
-            btn.id = `btn-variant-${index}`;
-            btn.onclick = () => {
-                currentVariantIndex = index;
-                loadTask(currentTopic, currentVariantIndex);
-            };
-            container.appendChild(btn);
+            btn.className = `topic-btn ${i === 1 ? 'active' : ''}`;
+            btn.id = `btn-topic-${i}`;
+            btn.onclick = () => selectTopic(i);
+            // Прогресс-бар внутри кнопки
+            const prog = document.createElement('div');
+            prog.className = 'topic-progress';
+            prog.id = `progress-topic-${i}`;
+            prog.style.width = '0%';
+            btn.appendChild(document.createTextNode(`№ ${i}`));
+            btn.appendChild(prog);
+            bar.appendChild(btn);
+        }
+    }
+
+    document.getElementById('taskCard').style.display = 'block';
+    updateStats();
+    selectTopic(1);
+}
+
+// ============================================================
+// ПОИСК
+// ============================================================
+function searchTask() {
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const resultsBox = document.getElementById('searchResults');
+    if (!query) { resultsBox.style.display = 'none'; return; }
+
+    let found = [];
+    for (let topicId in database) {
+        if (!database[topicId].variants) continue;
+        database[topicId].variants.forEach((task, index) => {
+            const ans = task.answer.toString().trim().toLowerCase();
+            if (ans === query) {
+                found.push({ topicId: parseInt(topicId), index, title: database[topicId].title });
+            }
         });
     }
 
-    function loadTask(topicId, variantIndex) {
-        const topic = database[topicId];
-        if (!topic || !topic.variants || topic.variants.length === 0) {
-            document.getElementById('taskText').innerHTML = "В этой теме пока нет доступных задач.";
-            document.getElementById('taskNum').innerText = `№ ${topicId}`;
-            return;
-        }
-
-        const task = topic.variants[variantIndex];
-        
-        document.getElementById('taskNum').innerText = `Задание ${topicId}.${variantIndex + 1}`;
-        document.getElementById('topicTitle').innerText = topic.title;
-        document.getElementById('taskText').innerHTML = task.text;
-
-        const img = document.getElementById('taskImage');
-        if (task.image) {
-            img.src = task.image;
-            img.style.display = 'block';
-        } else {
-            img.style.display = 'none';
-        }
-
-        document.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('active'));
-        const activeVarBtn = document.getElementById(`btn-variant-${variantIndex}`);
-        if (activeVarBtn) {
-            activeVarBtn.classList.add('active');
-            // Автоматическая прокрутка скроллбара к активной кнопке
-            activeVarBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        document.getElementById('userAnswer').value = '';
-        document.getElementById('resultMsg').style.display = 'none';
-    }
-
-    function checkAnswer() {
-        const userAns = document.getElementById('userAnswer').value.trim().toLowerCase();
-        const correctAns = database[currentTopic].variants[currentVariantIndex].answer.toString().trim().toLowerCase();
-        const msg = document.getElementById('resultMsg');
-        
-        msg.style.display = 'block';
-        if (userAns === correctAns) {
-            msg.innerText = "Правильно! Отличный результат. ✅";
-            msg.className = "result-msg success";
-        } else {
-            msg.innerText = "Неверно. Проверьте свои расчеты. ❌";
-            msg.className = "result-msg error";
-        }
-    }
-
-    function showAnswer() {
-        const correctAns = database[currentTopic].variants[currentVariantIndex].answer;
-        const msg = document.getElementById('resultMsg');
-        msg.style.display = 'block';
-        msg.innerHTML = `Правильный ответ: <b>${correctAns}</b> 💡`;
-        msg.className = "result-msg hint";
-    }
-
-    function navigateTask(direction) {
-        const topic = database[currentTopic];
-        if (!topic || !topic.variants) return;
-
-        if (currentVariantIndex + direction >= 0 && currentVariantIndex + direction < topic.variants.length) {
-            currentVariantIndex += direction;
-            loadTask(currentTopic, currentVariantIndex);
-        } else {
-            let nextTopic = currentTopic + direction;
-            if (database[nextTopic]) {
-                currentTopic = nextTopic;
-                currentVariantIndex = direction === -1 ? database[nextTopic].variants.length - 1 : 0;
-                
-                document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
-                const activeBtn = document.getElementById(`btn-topic-${nextTopic}`);
-                if (activeBtn) activeBtn.classList.add('active');
-                
-                renderVariantButtons(nextTopic);
+    if (found.length > 0) {
+        resultsBox.innerHTML = `<h4>Найдено: ${found.length} задани${found.length === 1 ? 'е' : 'я'} с ответом «${query}»</h4>`;
+        found.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'search-result-item';
+            const tick = isSolved(item.topicId, item.index) ? ' ✓' : '';
+            div.innerHTML = `<b>Задание ${item.topicId}.${item.index + 1}</b>${tick} <span style="color:var(--muted-color); font-size:13px;">${item.title}</span>`;
+            div.onclick = () => {
+                selectTopic(item.topicId);
+                currentVariantIndex = item.index;
                 loadTask(currentTopic, currentVariantIndex);
-            }
-        }
+                resultsBox.style.display = 'none';
+                document.getElementById('searchInput').value = '';
+            };
+            resultsBox.appendChild(div);
+        });
+    } else {
+        resultsBox.innerHTML = `<p style="margin:0; color:var(--error-color);">Заданий с таким ответом не найдено.</p>`;
+    }
+    resultsBox.style.display = 'block';
+}
+
+// ============================================================
+// ВЫБОР ТЕМЫ
+// ============================================================
+function selectTopic(topicId) {
+    document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
+    const activeBtn = document.getElementById(`btn-topic-${topicId}`);
+    if (activeBtn) activeBtn.classList.add('active');
+    currentTopic = topicId;
+    currentVariantIndex = 0;
+    renderVariantButtons(topicId);
+    loadTask(currentTopic, currentVariantIndex);
+}
+
+// ============================================================
+// КНОПКИ ВАРИАНТОВ
+// ============================================================
+function renderVariantButtons(topicId) {
+    const container = document.getElementById('variantsBar');
+    container.innerHTML = '';
+    const topic = database[topicId];
+    if (!topic || !topic.variants) return;
+    topic.variants.forEach((variant, index) => {
+        const btn = document.createElement('button');
+        btn.id = `btn-variant-${index}`;
+        btn.innerText = `${topicId}.${index + 1}`;
+        btn.onclick = () => { currentVariantIndex = index; loadTask(currentTopic, index); };
+        refreshVariantBtn(btn, topicId, index);
+        container.appendChild(btn);
+    });
+}
+function refreshVariantBtn(btn, topicId, index) {
+    const solved = isSolved(topicId, index);
+    btn.className = 'variant-btn' + (solved ? ' solved' : '');
+}
+function refreshCurrentVariantBtn() {
+    const btn = document.getElementById(`btn-variant-${currentVariantIndex}`);
+    if (btn) refreshVariantBtn(btn, currentTopic, currentVariantIndex);
+}
+
+// ============================================================
+// ЗАГРУЗКА ЗАДАЧИ
+// ============================================================
+function loadTask(topicId, variantIndex) {
+    const topic = database[topicId];
+    if (!topic || !topic.variants || topic.variants.length === 0) {
+        document.getElementById('taskText').innerHTML = "В этой теме пока нет задач.";
+        return;
+    }
+    const task = topic.variants[variantIndex];
+    document.getElementById('taskNum').innerText = `Задание ${topicId}.${variantIndex + 1}`;
+    document.getElementById('topicTitle').innerText = topic.title;
+    document.getElementById('taskText').innerHTML = task.text;
+
+    const img = document.getElementById('taskImage');
+    if (task.image) { img.src = task.image; img.style.display = 'block'; }
+    else img.style.display = 'none';
+
+    // Кнопки вариантов: пометить активную
+    document.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('active'));
+    const activeVarBtn = document.getElementById(`btn-variant-${variantIndex}`);
+    if (activeVarBtn) {
+        activeVarBtn.classList.add('active');
+        activeVarBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
-    window.onload = initSite;
+    document.getElementById('userAnswer').value = '';
+    const msg = document.getElementById('resultMsg');
+    msg.style.display = 'none';
+    msg.className = 'result-msg';
+}
+
+// ============================================================
+// ПРОВЕРКА ОТВЕТА
+// ============================================================
+function checkAnswer() {
+    const userAns = document.getElementById('userAnswer').value.trim().toLowerCase();
+    if (!userAns) return;
+    const correctAns = database[currentTopic].variants[currentVariantIndex].answer.toString().trim().toLowerCase();
+    const msg = document.getElementById('resultMsg');
+    const card = document.getElementById('taskCard');
+
+    msg.style.display = 'block';
+    // сброс анимации
+    card.classList.remove('flash-success', 'flash-error');
+    void card.offsetWidth; // reflow
+
+    if (userAns === correctAns) {
+        msg.innerHTML = '✅ Правильно! Отличный результат.';
+        msg.className = 'result-msg success';
+        card.classList.add('flash-success');
+        soundSuccess();
+        markSolved(currentTopic, currentVariantIndex);
+        refreshCurrentVariantBtn();
+        updateStats();
+        launchConfetti();
+    } else {
+        msg.innerHTML = '❌ Неверно. Проверьте расчёты.';
+        msg.className = 'result-msg error';
+        card.classList.add('flash-error');
+        soundError();
+    }
+}
+
+// ============================================================
+// ПОКАЗАТЬ ОТВЕТ
+// ============================================================
+function showAnswer() {
+    const correctAns = database[currentTopic].variants[currentVariantIndex].answer;
+    const msg = document.getElementById('resultMsg');
+    msg.style.display = 'block';
+    msg.innerHTML = `💡 Правильный ответ: <b>${correctAns}</b>`;
+    msg.className = 'result-msg hint';
+    soundHint();
+}
+
+// ============================================================
+// НАВИГАЦИЯ
+// ============================================================
+function navigateTask(direction) {
+    const topic = database[currentTopic];
+    if (!topic || !topic.variants) return;
+    const next = currentVariantIndex + direction;
+    if (next >= 0 && next < topic.variants.length) {
+        currentVariantIndex = next;
+        loadTask(currentTopic, currentVariantIndex);
+    } else {
+        let nextTopic = currentTopic + direction;
+        if (database[nextTopic]) {
+            selectTopic(nextTopic);
+            currentVariantIndex = direction === -1 ? database[nextTopic].variants.length - 1 : 0;
+            loadTask(currentTopic, currentVariantIndex);
+        }
+    }
+}
+
+window.onload = initSite;
 </script>
 </body>
 </html>
