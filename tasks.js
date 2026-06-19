@@ -2204,7 +2204,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
-    answer: `6`
+    answer: `11`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2261,7 +2261,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
-    answer: `7`
+    answer: `6`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2372,7 +2372,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (12, 5); (5, 3); (–4, 1); (2, –5); (5, –7); (10, 3); (18, 6); (3, 0); (2, 5).<br><br>
 Сколько было запусков, при которых программа напечатала «YES»?`,
-    answer: `7`
+    answer: `4`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2429,7 +2429,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
-    answer: `7`
+    answer: `9`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2540,7 +2540,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>семь раз</b>.`,
-    answer: `5`
+    answer: `12`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2597,7 +2597,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
-    answer: `12`
+    answer: `2`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2654,7 +2654,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
-    answer: `11`
+    answer: `9`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2711,7 +2711,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>восемь раз</b>.`,
-    answer: `12`
+    answer: `1`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2768,7 +2768,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
-    answer: `7`
+    answer: `2`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2825,7 +2825,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
-    answer: `4`
+    answer: `5`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2882,7 +2882,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
-    answer: `7`
+    answer: `9`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2939,7 +2939,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
-    answer: `8`
+    answer: `6`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -2996,7 +2996,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
-    answer: `11`
+    answer: `8`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3053,7 +3053,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
-    answer: `13`
+    answer: `8`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3110,7 +3110,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
-    answer: `8`
+    answer: `6`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3221,7 +3221,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
-    answer: `7`
+    answer: `9`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3278,7 +3278,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>один раз</b>.`,
-    answer: `12`
+    answer: `13`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3332,7 +3332,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, –2); (5, 3); (14, 1); (–12, 5); (5, –7); (10, 3); (8, 2); (3, 0); (23, 9).<br><br>
 Сколько было запусков, при которых программа напечатала «NO»?`,
-    answer: `2`
+    answer: `3`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3389,171 +3389,6 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
-    answer: `2`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > 10 или t > А
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > A):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > 10) or (t > A)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
-Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
-    answer: `1`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t
-  ввод s
-  ввод t
-  если s < -2 или не t < 4
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-if (s < -2) or not (t < 4):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t: integer;
-begin
- readln(s);
- readln(t);
- if (s < -2) or not (t < 4)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(2, 5); (–2, 4); (4, 1); (–11, –5); (3, –7); (1, 8); (8, 2); (3, 0); (23, 1).<br><br>
-Сколько было запусков, при которых программа напечатала «YES»?`,
-    answer: `6`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t
-  ввод s
-  ввод t
-  если s > -3 и не t > 5
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-if (s > -3) and not (t > 5):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t: integer;
-begin
- readln(s);
- readln(t);
- if (s > -3) and not (t > 5)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(–3, 5); (–2, 2); (–1, –3); (1, 0); (–4, –7); (2, 3); (3, 5); (5, –3); (6, –7).<br><br>
-Сколько было запусков, при которых программа напечатала «NO»?`,
     answer: `3`
 },
 {
@@ -3610,8 +3445,173 @@ end.
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s < -2 или не t < 4
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if (s < -2) or not (t < 4):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s < -2) or not (t < 4)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, 5); (–2, 4); (4, 1); (–11, –5); (3, –7); (1, 8); (8, 2); (3, 0); (23, 1).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `4`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s > -3 и не t > 5
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if (s > -3) and not (t > 5):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s > -3) and not (t > 5)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–3, 5); (–2, 2); (–1, –3); (1, 0); (–4, –7); (2, 3); (3, 5); (5, –3); (6, –7).<br><br>
+Сколько было запусков, при которых программа напечатала «NO»?`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
-    answer: `11`
+    answer: `9`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3725,7 +3725,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
-    answer: `6`
+    answer: `2`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3890,7 +3890,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
-    answer: `11`
+    answer: `6`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -3947,7 +3947,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>два раза</b>.`,
-    answer: `3`
+    answer: `2`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4058,7 +4058,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
-    answer: `1`
+    answer: `3`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4112,7 +4112,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, –2); (–2, 4); (4, 1); (–12, 5); (0, –7); (1, 3); (8, 2); (3, 0); (23, 1).<br><br>
 Сколько было запусков, при которых программа напечатала «NO»?`,
-    answer: `5`
+    answer: `4`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4169,7 +4169,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
-    answer: `13`
+    answer: `10`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4283,7 +4283,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
-    answer: `2`
+    answer: `4`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4340,7 +4340,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
-    answer: `10`
+    answer: `2`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4454,7 +4454,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
-    answer: `13`
+    answer: `1`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4511,7 +4511,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>семь раз</b>.`,
-    answer: `13`
+    answer: `11`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4568,7 +4568,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
-    answer: `3`
+    answer: `10`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4625,7 +4625,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
-    answer: `2`
+    answer: `5`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4736,7 +4736,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
-    answer: `1`
+    answer: `4`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4847,7 +4847,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
-    answer: `10`
+    answer: `5`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -4900,231 +4900,6 @@ end.
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (2, 2); (7, 0); (14, 10); (22, 1); (10, 3); (12, 1); (9, 2); (5, 1); (2, 5).<br><br>
-Сколько было запусков, при которых программа напечатала «YES»?`,
-    answer: `3`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > 10 или t > А
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > A):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > 10) or (t > A)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
-Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
-    answer: `10`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > A или t > 12
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > A) or (t > 12):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
-Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
-    answer: `10`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > А или t > 11
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > A) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 11)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
-Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
-    answer: `2`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t
-  ввод s
-  ввод t
-  если s < 4 и не t < 2
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-if (s < 4) and not (t < 2):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t: integer;
-begin
- readln(s);
- readln(t);
- if (s < 4) and not (t < 2)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(0, 2); (–1, 0); (2, 3); (4, 2); (3, 1); (–2, 7); (10, –2); (5, 4); (–7, 11).<br><br>
 Сколько было запусков, при которых программа напечатала «YES»?`,
     answer: `5`
 },
@@ -5182,8 +4957,233 @@ end.
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
-Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
     answer: `9`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s < 4 и не t < 2
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if (s < 4) and not (t < 2):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s < 4) and not (t < 2)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(0, 2); (–1, 0); (2, 3); (4, 2); (3, 1); (–2, 7); (10, –2); (5, 4); (–7, 11).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `4`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+    answer: `11`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5240,7 +5240,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
-    answer: `3`
+    answer: `2`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5297,7 +5297,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
-    answer: `6`
+    answer: `2`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5354,7 +5354,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
-    answer: `13`
+    answer: `10`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5468,7 +5468,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
-    answer: `4`
+    answer: `5`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5579,7 +5579,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>два раза</b>.`,
-    answer: `12`
+    answer: `11`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5633,7 +5633,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (1, 11); (5, 9); (8, –12); (6, 6); (3, 11); (–10, –12); (–10, 11); (7, 1); (–12, 7). <br><br>
 Сколько было запусков, при которых программа напечатала «YES»?`,
-    answer: `3`
+    answer: `5`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5690,7 +5690,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
-    answer: `1`
+    answer: `3`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -5747,174 +5747,6 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
-    answer: `1`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > A или t > 12
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > A) or (t > 12):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
-Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>два раза</b>.`,
-    answer: `13`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, k
-  ввод s
-  ввод k
-  если mod(s, 6) = k
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-k = int(input())
-if s % 6 == k:
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if s mod 6 = k
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
-(6, 6); (7, 1); (16, 10); (20, 2); (10, 3); (12, 2); (2, 2); (0, 6); (4, 5).<br><br>
-Сколько было запусков, при которых программа напечатала «YES»?`,
-    answer: `5`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > А или t > 11
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > A) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 11)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
-Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
     answer: `2`
 },
 {
@@ -5971,176 +5803,8 @@ end.
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
-Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>семь раз</b>.`,
-    answer: `14`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > A или t > 12
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > A) or (t > 12):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
-Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>два раза</b>.`,
-    answer: `6`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > A или t > 12
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > A) or (t > 12):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
-Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
-    answer: `3`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на трёх языках программирования.<br><br>
-<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
-<tr>
-<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
-<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-алг
-нач
-  цел s, t
-  ввод s
-  ввод t
-  если не (s <= 2 и t < 3)
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-s = int(input())
-t = int(input())
-if not ((s <= 2) and (t < 3)):
-    print("YES")
-else:
-    print("NO")
-</pre>
-</td>
-<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
-<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
-var s, t: integer;
-begin
- readln(s);
- readln(t);
- if not((s <= 2) and (t < 3))
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-</td>
-</tr>
-</table>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(2, –2); (5, 3); (–4, 1); (–12, 5), (5, –7); (10, 3); (–8, 12); (3, 0); (2, 3).<br><br>
-Сколько было запусков, при которых программа напечатала «YES»?`,
-    answer: `6`
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>два раза</b>.`,
+    answer: `12`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -6159,7 +5823,7 @@ end.
   цел s, k
   ввод s
   ввод k
-  если s > 6 и k < 6
+  если mod(s, 6) = k
     то вывод "YES"
     иначе вывод "NO"
   все
@@ -6170,7 +5834,7 @@ end.
 <pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
-if s > 6 and k < 6:
+if s % 6 == k:
     print("YES")
 else:
     print("NO")
@@ -6182,7 +5846,7 @@ var s, k: integer;
 begin
  readln(s);
  readln(k);
- if (s > 6) and (k < 6)
+ if s mod 6 = k
   then writeln('YES')
   else writeln('NO')
 end.
@@ -6192,8 +5856,65 @@ end.
 </table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
-(1, 1); (7, 0); (8, –12); (6, 6); (3, 11); (–10, –12); (10, 2); (7, 1); (12, 6).<br><br>
+(6, 6); (7, 1); (16, 10); (20, 2); (10, 3); (12, 2); (2, 2); (0, 6); (4, 5).<br><br>
 Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
     answer: `5`
 },
 {
@@ -6250,8 +5971,287 @@ end.
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
-Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>семь раз</b>.`,
     answer: `12`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>два раза</b>.`,
+    answer: `1`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если не (s <= 2 и t < 3)
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if not ((s <= 2) and (t < 3)):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not((s <= 2) and (t < 3))
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, –2); (5, 3); (–4, 1); (–12, 5), (5, –7); (10, 3); (–8, 12); (3, 0); (2, 3).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если s > 6 и k < 6
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+k = int(input())
+if s > 6 and k < 6:
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s > 6) and (k < 6)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(1, 1); (7, 0); (8, –12); (6, 6); (3, 11); (–10, –12); (10, 2); (7, 1); (12, 6).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `4`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
+    answer: `5`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -6308,7 +6308,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
-    answer: `13`
+    answer: `8`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -6422,7 +6422,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
-    answer: `8`
+    answer: `7`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
@@ -6479,7 +6479,7 @@ end.
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
 Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
-    answer: `11`
+    answer: `8`
 }
         ]
     },
