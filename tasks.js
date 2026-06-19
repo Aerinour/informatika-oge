@@ -2149,30 +2149,5932 @@ const database = {
     6: {
         title: "6. Программа с условным оператором",
         variants: [
-            {
-                text: `Ниже написан код на Python:
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
 <pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
 s = int(input())
 t = int(input())
-if s > 5 or t > 5:
-    print('YES')
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
 else:
-    print('NO')
+    print("NO")
 </pre>
-Было проведено 4 запуска со следующими парами (s, t):<br>
-<b>(1, 2); (6, 3); (4, 7); (2, 2).</b><br>
-Сколько раз программа напечатала 'YES'?`,
-                answer: `2`
-            }
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
+    answer: `11`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > A
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > A THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > A)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>два раза</b>.`,
+    answer: `6`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если не (s >= 2 и t < 5)
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not((s >= 2) and (t < 5))
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF NOT (s >= 2 AND t < 5) THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if not ((s >= 2) and (t < 5)):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if !((s >= 2) && (t < 5))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(12, 5); (5, 3); (–4, 1); (2, –5); (5, –7); (10, 3); (18, 6); (3, 0); (2, 5).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s < 5 и не t > 3
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s < 5) and not (t > 3)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF s < 5 AND NOT t > 3 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if (s < 5) and not (t > 3):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if ((s < 5) && !(t > 3))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, –2); (–2, 4); (4, 1); (–12, 5); (0, –7); (1, 3); (8, 2); (3, 0); (23, 1).<br><br>
+Сколько было запусков, при которых программа напечатала «NO»?`,
+    answer: `4`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, А
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, А: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, А AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, А;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>семь раз</b>.`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >>A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
+    answer: `12`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
+    answer: `11`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>восемь раз</b>.`,
+    answer: `12`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
+    answer: `4`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var A, s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM A, s, t AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+    answer: `8`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+    answer: `11`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
+    answer: `8`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если mod(s, 9) = k
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 9 = k
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s MOD 9 = k THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s % 9 == k:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s % 9 == k)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(9, 0); (10, 10); (18, 9); (22, 4); (27, 3); (12, 9); (29, 2); (4, 2); (3, 3).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `4`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var A, s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>один раз</b>.`,
+    answer: `12`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если не (s >= 5 и t < 3)
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not ((s >= 5) and (t < 3))
+  then
+writeln('YES')
+  else
+ writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF NOT (s >= 5 AND t < 3) THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if not ((s >= 5) and (t < 3)):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if !((s >= 5) && (t < 3))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, –2); (5, 3); (14, 1); (–12, 5); (5, –7); (10, 3); (8, 2); (3, 0); (23, 9).<br><br>
+Сколько было запусков, при которых программа напечатала «NO»?`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
+    answer: `1`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s < -2 или не t < 4
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+readln(s);
+ readln(t);
+ if (s < -2) or not (t < 4)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF s < -2 OR NOT t < 4 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if (s < -2) or not (t < 4):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if ((s < -2) || !(t < 4))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, 5); (–2, 4); (4, 1); (–11, –5); (3, –7); (1, 8); (8, 2); (3, 0); (23, 1).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `6`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s > -3 и не t > 5
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s > -3) and not (t > 5)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF s > -3 AND NOT t > 5 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if (s > -3) and not (t > 5):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if ((s >-3) && !(t > 5))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–3, 5); (–2, 2); (–1, –3); (1, 0); (–4, –7); (2, 3); (3, 5); (5, –3); (6, –7).<br><br>
+Сколько было запусков, при которых программа напечатала «NO»?`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
+    answer: `11`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
+    answer: `10`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
+    answer: `6`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если s > 6 и k > 6
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s > 6) and (k > 6)
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s > 6 AND k > 6 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s > 6 and k > 6:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s > 6 && k > 6)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(1, 1); (7, 9); (8, –12); (6, 6); (8, 11); (–10, -12); (–10, 11); (7, 1); (12, 7).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если не (s < -4 и t >= 3)
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not((s < -4) and (t >=3 ))
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF NOT (s < -4 AND t >= 3) THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if not ((s < -4) and (t >= 3)):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if !((s < -4) && (t >= 3))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–5, –2); (5, 3); (–14, 3); (–12, 5), (5, –7); (10, 3); (–4, 3); (3, 0); (–4, 9).<br><br>
+Сколько было запусков, при которых программа напечатала «NO»?`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
+    answer: `11`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, А
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, А: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, А AS INTEGER
+INPUT s
+INPUT t
+INPUT А
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, А;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>два раза</b>.`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s > 10 или t > 10
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s > 10) or (t > 10)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF s > 10 OR t > 10 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if (s > 10) or (t > 10):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if (s > 10 || t > 10)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
+    answer: `1`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s > 5 или не t < 3
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s > 5) or not (t < 3)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF s > 5 OR NOT t < 3 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if (s > 5) or not (t < 3):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if ((s > 5) || !(t < 3))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, –2); (–2, 4); (4, 1); (–12, 5); (0, –7); (1, 3); (8, 2); (3, 0); (23, 1).<br><br>
+Сколько было запусков, при которых программа напечатала «NO»?`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
+    answer: `7`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
+    answer: `10`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>два раза</b>.`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>семь раз</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если не s > -4 или t < 3
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not(s > -4) or (t < 3)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF NOT s > -4 OR t < 3 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if not (s > -4) or (t < 3):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if (!(s > -4) || (t < 3))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, –2); (5, 3); (14, 1); (–12, 5), (5, 7); (10, 3); (8, 2); (3, 0); (–4, 9).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `6`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
+    answer: `1`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если s < 6 и k < 6
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s < 6) and (k < 6)
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s < 6 AND k < 6 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s < 6 and k < 6:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s < 6 && k < 6)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(1, 1); (7, 9); (8, –12); (6, 6); (3, 11); (–10, –12); (–10, 11); (7, 1); (12, 7).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>четыре раза</b>.`,
+    answer: `10`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если mod(s, 7) = k
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 7 = k
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s MOD 7 = k THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s % 7 == k:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s % 7 == k)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(2, 2); (7, 0); (14, 10); (22, 1); (10, 3); (12, 1); (9, 2); (5, 1); (2, 5).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>шесть раз</b>.`,
+    answer: `10`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `10`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если s < 4 и не t < 2
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+readln(s);
+ readln(t);
+ if (s < 4) and not (t < 2)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF s < 4 AND NOT t < 2 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if (s < 4) and not (t < 2):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if ((s < 4) && !(t < 2))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(0, 2); (–1, 0); (2, 3); (4, 2); (3, 1); (–2, 7); (10, –2); (5, 4); (–7, 11).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+    answer: `9`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
+    answer: `6`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
+    answer: `10`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > 10 или t > А
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > 10) or (t > А)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > 10 OR t > А THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > А):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > 10 || t > А)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
+    answer: `4`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если mod(s, 5) = k
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 5 = k
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s MOD 5 = k THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s % 5 == k:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s % 5 == k)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(1, 2); (5, 0); (18, 3); (21, 1); (10, 2); (12, 1); (9, 4); (5, 5); (3, 3).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>два раза</b>.`,
+    answer: `12`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если s < 6 и k > 6
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s < 6) and (k > 6)
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s < 6 AND k > 6 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s < 6 and k > 6:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s < 6 && k > 6)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(1, 11); (5, 9); (8, –12); (6, 6); (3, 11); (–10, –12); (–10, 11); (7, 1); (–12, 7). <br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+    answer: `1`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод «NO»
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
+    answer: `1`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>два раза</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если mod(s, 6) = k
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 6 = k
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s MOD 6 = k THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s % 6 == k:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s % 6 == k)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(6, 6); (7, 1); (16, 10); (20, 2); (10, 3); (12, 2); (2, 2); (0, 6); (4, 5).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>три раза</b>.`,
+    answer: `2`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>семь раз</b>.`,
+    answer: `14`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>два раза</b>.`,
+    answer: `6`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>количество целых значений</b> параметра А, при которых для указанных входных данных программа напечатает «NO» <b>шесть раз</b>.`,
+    answer: `3`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t
+  ввод s
+  ввод t
+  если не (s <= 2 и t < 3)
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not((s <= 2) and (t < 3))
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t AS INTEGER
+INPUT s
+INPUT t
+IF NOT(s <= 2 AND t < 3) THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+if not ((s <= 2) and (t < 3)):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t;
+   cin >> s;
+   cin >> t;
+   if (!(s <= 2 && t < 3))
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(2, –2); (5, 3); (–4, 1); (–12, 5), (5, –7); (10, 3); (–8, 12); (3, 0); (2, 3).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `6`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, k
+  ввод s
+  ввод k
+  если s > 6 и k < 6
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s > 6) and (k < 6)
+   then writeln('YES')
+   else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM k, s AS INTEGER
+INPUT s
+INPUT k
+IF s > 6 AND k < 6 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+END IF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+k = int(input())
+if s > 6 and k < 6:
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, k;
+ cin >> s;
+ cin >> k;
+ if (s > 6 && k < 6)
+    cout << "YES" << endl;
+ else
+    cout << "NO" << endl;
+ return 0;
+}
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
+(1, 1); (7, 0); (8, –12); (6, 6); (3, 11); (–10, –12); (10, 2); (7, 1); (12, 6).<br><br>
+Сколько было запусков, при которых программа напечатала «YES»?`,
+    answer: `5`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>пять раз</b>.`,
+    answer: `12`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>три раза</b>.`,
+    answer: `10`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > А или t > 11
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+readln(s);
+readln(t);
+readln(A);
+if (s > А) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > А OR t > 11 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > А) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main(){
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > А || t > 11)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
+Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+    answer: `8`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на пяти языках программирования.<br><br>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Алгоритмический язык
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Паскаль
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then
+    writeln('YES')
+  else
+    writeln('NO')
+end.
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Бейсик
+DIM s, t, A AS INTEGER
+INPUT s
+INPUT t
+INPUT A
+IF s > A OR t > 12 THEN
+  PRINT "YES"
+ELSE
+  PRINT "NO"
+ENDIF
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+Python
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int s, t, A;
+   cin >> s;
+   cin >> t;
+   cin >> A;
+   if (s > A || t > 12)
+     cout << "YES" << endl;
+   else
+     cout << "NO" << endl;
+   return 0;
+ }
+</pre>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>четыре раза</b>.`,
+    answer: `11`
+}
         ]
     },
     7: {
         title: "7. Информационно-коммуникационные технологии",
         variants: [
-            {
-                text: `Доступ к файлу <b>rus.txt</b>, находящемуся на сервере <b>obr.org</b>, осуществляется по протоколу <b>https</b>. Фрагменты адреса закодированы цифрами:<br>1) obr.org &nbsp; 2) / &nbsp; 3) rus. &nbsp; 4) https &nbsp; 5) :// &nbsp; 6) txt<br><br>Запишите последовательность цифр, кодирующую адрес указанного файла в сети Интернет.`,
-                answer: `451236`
-            }
+{
+    text: `Установите последовательность.<br>Доступ к файлу karl.htm, находящемуся на сервере april.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) http<br>2) karl<br>3) /<br>4) april<br>5) .htm<br>6) .ru<br>7) ://</td></tr></table>`,
+    answer: `1743625`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу edu.txt, находящемуся на сервере htm.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) htm<br>2) ://<br>3) /<br>4) http<br>5) .ru<br>6) .txt<br>7) edu</td></tr></table>`,
+    answer: `4215376`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу tests.rar, находящемуся на сервере olympiada.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) tests<br>2) http<br>3) /<br>4) .ru<br>5) olympiada<br>6) ://<br>7) .rar</td></tr></table>`,
+    answer: `2654317`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу ru.gif, находящемуся на сервере last.ru, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) ://<br>3) last.<br>4) gif<br>5) https<br>6) ru.<br>7) ru</td></tr></table>`,
+    answer: `5236174`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу net.html, находящемуся на сервере txt.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .html<br>2) /<br>3) .ru<br>4) net<br>5) ://<br>6) http<br>7) txt</td></tr></table>`,
+    answer: `6573241`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу https.txt, находящемуся на сервере smile.ru, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) https<br>2) /<br>3) smile<br>4) https.<br>5) .ru<br>6) txt<br>7) ://</td></tr></table>`,
+    answer: `1735246`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу inf.docx, находящемуся на сервере teach.ru, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) teach<br>2) ftp<br>3) inf<br>4) /<br>5) ://<br>6) .docx<br>7) .ru</td></tr></table>`,
+    answer: `2517436`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу index.htm, находящемуся на сервере foto.ru, осуществляется по протоколу http. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) http<br>2) .htm<br>3) foto<br>4) ://<br>5) /<br>6) index<br>7) .ru</td></tr></table>`,
+    answer: `1437562`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу htm.txt, находящемуся на сервере com.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) com<br>3) .txt<br>4) ://<br>5) .ru<br>6) htm<br>7) http</td></tr></table>`,
+    answer: `7425163`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу org.txt, находящемуся на сервере net.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) org<br>2) .ru<br>3) /<br>4) ://<br>5) http<br>6) net<br>7) .txt</td></tr></table>`,
+    answer: `5462317`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу olymp.htm, находящемуся на сервере school.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ://<br>2) school<br>3) .htm<br>4) olymp<br>5) .ru<br>6) /<br>7) http</td></tr></table>`,
+    answer: `7125643`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу spis.htm, находящемуся на сервере sch.net, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ://<br>2) spis<br>3) .net<br>4) .htm<br>5) ftp<br>6) sch<br>7) /</td></tr></table>`,
+    answer: `5163724`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу hello.ppt, находящемуся на сервере message.org, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) hello<br>3) org<br>4) message.<br>5) .ppt<br>6) ://<br>7) http</td></tr></table>`,
+    answer: `7643125`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу game.doc, находящемуся на сервере doc.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) //<br>2) /<br>3) http:<br>4) ru<br>5) doc.<br>6) game<br>7) .doc</td></tr></table>`,
+    answer: `3154267`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу doc.htm, находящемуся на сервере site.com, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) site<br>2) ://<br>3) doc<br>4) /<br>5) .htm<br>6) .com<br>7) http</td></tr></table>`,
+    answer: `7216435`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу hello.txt, находящемуся на сервере txt.info, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ://<br>2) txt.<br>3) /<br>4) hello<br>5) ftp<br>6) .txt<br>7) info</td></tr></table>`,
+    answer: `5127346`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу htm.txt, находящемуся на сервере com.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) com<br>3) .txt<br>4) ://<br>5) .ru<br>6) htm<br>7) http</td></tr></table>`,
+    answer: `7425163`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу poka.doc, находящемуся на сервере doc.ru, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .doc<br>2) doc.<br>3) ://<br>4) /<br>5) poka<br>6) https<br>7) ru</td></tr></table>`,
+    answer: `6327451`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу happy.htm, находящемуся на сервере sibline.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) sibline<br>3) .htm<br>4) ://<br>5) .ru<br>6) happy<br>7) http</td></tr></table>`,
+    answer: `7425163`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу http.txt, находящемуся на сервере book.com, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) http.<br>3) //<br>4) http:<br>5) .com<br>6) book<br>7) txt</td></tr></table>`,
+    answer: `4365127`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу slon.txt, находящемуся на сервере circ.org, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .txt<br>2) ://<br>3) http<br>4) circ<br>5) /<br>6) .org<br>7) slon</td></tr></table>`,
+    answer: `3246571`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу lot.htm, находящемуся на сервере catalog.ru, осуществляется по протоколу http. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) ://<br>3) lot<br>4) catalog<br>5) http<br>6) .htm<br>7) .ru</td></tr></table>`,
+    answer: `5247136`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу test.xls, находящемуся на сервере school.org, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) test<br>2) school<br>3) /<br>4) ://<br>5) .org<br>6) .xls<br>7) ftp</td></tr></table>`,
+    answer: `7425316`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу pupil.pdf, находящемуся на сервере class.ru, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) https<br>2) .ru<br>3) .pdf<br>4) pupil<br>5) ://<br>6) /<br>7) class</td></tr></table>`,
+    answer: `1572643`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу user.doc, находящемуся на сервере school.ru, осуществляется по протоколу ftp. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) ftp<br>3) user<br>4) school<br>5) .doc<br>6) ://<br>7) .ru</td></tr></table>`,
+    answer: `2647135`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу color.gif, находящемуся на сервере box.net, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ftp<br>2) /<br>3) box.<br>4) color<br>5) net<br>6) .gif<br>7) ://</td></tr></table>`,
+    answer: `1735246`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу ru.txt, находящемуся на сервере html.net, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) html<br>2) /<br>3) http<br>4) .txt<br>5) ://<br>6) ru<br>7) .net</td></tr></table>`,
+    answer: `3517264`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу name.gif, находящемуся на сервере jour.com, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .com<br>2) ftp<br>3) jour<br>4) /<br>5) ://<br>6) .gif<br>7) name</td></tr></table>`,
+    answer: `2531476`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу photo.jpg, находящемуся на сервере mysite.ru, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) photo<br>2) ftp<br>3) /<br>4) .jpg<br>5) mysite<br>6) ://<br>7) .ru</td></tr></table>`,
+    answer: `2657314`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу bye.doc, находящемуся на сервере doc.info, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) info<br>2) .doc<br>3) ftp<br>4) bye<br>5) /<br>6) doc.<br>7) ://</td></tr></table>`,
+    answer: `3761542`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу page.htm, находящемуся на сервере book.ru, осуществляется по протоколу http. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) page<br>3) ://<br>4) .ru<br>5) .htm<br>6) book<br>7) http</td></tr></table>`,
+    answer: `7364125`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу GOA.png, находящемуся на сервере mytravel.com, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) GOA<br>2) mytravel<br>3) /<br>4) .com<br>5) .png<br>6) ftp<br>7) ://</td></tr></table>`,
+    answer: `6724315`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу ciao.doc, находящемуся на сервере doc.com, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) doc.<br>2) .doc<br>3) ciao<br>4) http<br>5) ://<br>6) /<br>7) com</td></tr></table>`,
+    answer: `4517632`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу summer.jpeg, находящемуся на сервере weather.info, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ://<br>2) summer<br>3) /<br>4) weather<br>5) ftp<br>6) .jpeg<br>7) .info</td></tr></table>`,
+    answer: `5147326`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу https.ppt, находящемуся на сервере smtp.org, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) https<br>2) smtp<br>3) /<br>4) https.<br>5) .org<br>6) ://<br>7) ppt</td></tr></table>`,
+    answer: `1625347`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу klara.htm, находящемуся на сервере march.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) klara<br>2) /<br>3) march<br>4) .htm<br>5) .ru<br>6) ://<br>7) http</td></tr></table>`,
+    answer: `7635214`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу ftp.xls, находящемуся на сервере mail.info, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) xls<br>2) /<br>3) ftp.<br>4) ftp<br>5) .info<br>6) ://<br>7) mail</td></tr></table>`,
+    answer: `4675231`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу tiger.doc, находящемуся на сервере zoo.org, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .doc<br>2) zoo<br>3) /<br>4) ://<br>5) tiger<br>6) .org<br>7) http</td></tr></table>`,
+    answer: `7426351`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу txt.org, находящемуся на сервере net.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) http<br>3) .org<br>4) ://<br>5) .ru<br>6) net<br>7) txt</td></tr></table>`,
+    answer: `2465173`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу foto.jpg, находящемуся на сервере foto.ru, осуществляется по протоколу ftp. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) foto.ru<br>2) :<br>3) ftp<br>4) //<br>5) .jpg<br>6) foto<br>7) /</td></tr></table>`,
+    answer: `3241765`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу cat.pptx, находящемуся на сервере presentation.edu, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) ://<br>3) .pptx<br>4) cat<br>5) presentation<br>6) ftp<br>7) .edu</td></tr></table>`,
+    answer: `6257143`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу ftp.jpg, находящемуся на сервере text.net, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .net<br>2) jpg<br>3) ftp.<br>4) ://<br>5) ftp<br>6) /<br>7) text</td></tr></table>`,
+    answer: `5471632`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу sotr.pdf, находящемуся на сервере org.net, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .pdf<br>2) sotr<br>3) ://<br>4) .net<br>5) org<br>6) https<br>7) /</td></tr></table>`,
+    answer: `6354721`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу spis.xml, находящемуся на сервере book.net, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .net<br>2) /<br>3) ftp<br>4) spis<br>5) ://<br>6) book<br>7) .xml</td></tr></table>`,
+    answer: `3561247`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу txt.ru, находящемуся на сервере ftp.org, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) .org<br>3) ftp<br>4) ://<br>5) .ru<br>6) txt<br>7) http</td></tr></table>`,
+    answer: `7432165`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу bit.ru, находящемуся на сервере htm.com, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) bit<br>2) .ru<br>3) /<br>4) ://<br>5) .com<br>6) htm<br>7) ftp</td></tr></table>`,
+    answer: `7465312`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу tasks.rar, находящемуся на сервере contest.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) tasks<br>2) .rar<br>3) ://<br>4) contest<br>5) http<br>6) .ru<br>7) /</td></tr></table>`,
+    answer: `5346712`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу htm.net, находящемуся на сервере com.edu, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) com<br>3) .edu<br>4) ://<br>5) .net<br>6) htm<br>7) ftp</td></tr></table>`,
+    answer: `7423165`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу hi.gif, находящемуся на сервере past.ru, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ru<br>2) ://<br>3) past.<br>4) .gif<br>5) https<br>6) hi<br>7) /</td></tr></table>`,
+    answer: `5231764`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу math.doc, находящемуся на сервере obr.ru, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) obr<br>2) /<br>3) .ru<br>4) .doc<br>5) ://<br>6) math<br>7) https</td></tr></table>`,
+    answer: `7513264`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу net.txt, находящемуся на сервере org.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) http<br>3) org<br>4) ://<br>5) .ru<br>6) net<br>7) .txt</td></tr></table>`,
+    answer: `2435167`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу txt.html, находящемуся на сервере ru.net, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) http<br>2) ://<br>3) .html<br>4) txt<br>5) /<br>6) ru<br>7) .net</td></tr></table>`,
+    answer: `1267543`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу start.exe, находящемуся на сервере game.com, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) start<br>2) /<br>3) .exe<br>4) http<br>5) game<br>6) .com<br>7) ://</td></tr></table>`,
+    answer: `4756213`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу rus.doc, находящемуся на сервере obr.org, осуществляется по протоколу https. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) obr.<br>2) /<br>3) org<br>4) ://<br>5) doc<br>6) rus.<br>7) https</td></tr></table>`,
+    answer: `7413265`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу net.com, находящемуся на сервере www.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .com<br>2) .ru<br>3) net<br>4) http<br>5) /<br>6) ://<br>7) www</td></tr></table>`,
+    answer: `4672531`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу http.doc, находящемуся на сервере letter.net, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) http.<br>2) http<br>3) doc<br>4) /<br>5) letter<br>6) ://<br>7) .net</td></tr></table>`,
+    answer: `2657413`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу lesson.xls, находящемуся на сервере personalsite.com, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) personalsite<br>2) ftp<br>3) /<br>4) .com<br>5) lesson<br>6) ://<br>7) .xls</td></tr></table>`,
+    answer: `2614357`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу com.xls, находящемуся на сервере tt.com, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) com<br>2) xls<br>3) com.<br>4) http<br>5) tt.<br>6) /<br>7) ://</td></tr></table>`,
+    answer: `4753612`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу matem.html, находящемуся на сервере exam.ru, осуществляется по протоколу http. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .ru<br>2) .html<br>3) ://<br>4) exam<br>5) matem<br>6) http<br>7) /</td></tr></table>`,
+    answer: `6341752`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу com.htm, находящемуся на сервере txt.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) txt<br>2) http<br>3) /<br>4) сom<br>5) .ru<br>6) ://<br>7) .htm</td></tr></table>`,
+    answer: `2615347`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу table.xls, находящемуся на сервере ofis.com, осуществляется по протоколу ftp. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) ftp<br>3) com<br>4) ://<br>5) table.<br>6) ofis.<br>7) xls</td></tr></table>`,
+    answer: `2463157`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу http.exe, находящемуся на сервере page.com, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) page<br>3) exe<br>4) ://<br>5) http<br>6) .com<br>7) http.</td></tr></table>`,
+    answer: `5426173`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу book1.htm, находящемуся на сервере biblio.ru, осуществляется по протоколу http. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ://<br>2) biblio<br>3) http<br>4) .ru<br>5) .htm<br>6) book1<br>7) /</td></tr></table>`,
+    answer: `3124765`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу net.txt, находящемуся на сервере html.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) .ru<br>2) ://<br>3) html<br>4) net<br>5) /<br>6) http<br>7) .txt</td></tr></table>`,
+    answer: `6231547`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу txt.com, находящемуся на сервере net.ru, осуществляется по протоколу http. Фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) /<br>2) net<br>3) .com<br>4) ://<br>5) .ru<br>6) http<br>7) txt</td></tr></table>`,
+    answer: `6425173`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу table.xls, находящемуся на сервере home.ru, осуществляется по протоколу ftp. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) table<br>2) /<br>3) ://<br>4) .ru<br>5) .xls<br>6) ftp<br>7) home</td></tr></table>`,
+    answer: `6374215`
+},
+{
+    text: `Установите последовательность.<br>Доступ к файлу table.doc, находящемуся на сервере ru.ru, осуществляется по протоколу ftp. В таблице фрагменты адреса файла закодированы цифрами от 1 до 7. Запишите последовательность этих цифр, кодирующую адрес указанного файла в сети Интернет.<br><br><table border="1" cellpadding="5"><tr><td>1) ru.<br>2) .doc<br>3) table<br>4) ru<br>5) ://<br>6) /<br>7) ftp</td></tr></table>`,
+    answer: `7541632`
+}
         ]
     },
     8: {
