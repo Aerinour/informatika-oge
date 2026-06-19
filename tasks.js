@@ -2151,9 +2151,16 @@ const database = {
         variants: [
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2166,68 +2173,51 @@ const database = {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>целое значение</b> параметра А, при котором для указанных входных данных программа напечатает «NO» <b>пять раз</b>.`,
-    answer: `11`
+    answer: `6`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2240,34 +2230,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -2276,23 +2241,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -2301,9 +2265,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2316,8 +2287,20 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
@@ -2328,56 +2311,27 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > A THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > A):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > A)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
 Укажите <b>наименьшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>два раза</b>.`,
-    answer: `6`
+    answer: `12`
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -2389,8 +2343,19 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if not ((s >= 2) and (t < 5)):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t: integer;
 begin
  readln(s);
@@ -2400,42 +2365,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF NOT (s >= 2 AND t < 5) THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-if not ((s >= 2) and (t < 5)):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if !((s >= 2) && (t < 5))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (12, 5); (5, 3); (–4, 1); (2, –5); (5, –7); (10, 3); (18, 6); (3, 0); (2, 5).<br><br>
@@ -2444,9 +2376,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2459,34 +2398,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -2495,23 +2409,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -2520,9 +2433,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -2534,8 +2454,19 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if (s < 5) and not (t > 3):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t: integer;
 begin
  readln(s);
@@ -2545,42 +2476,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF s < 5 AND NOT t > 3 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-if (s < 5) and not (t > 3):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if ((s < 5) && !(t > 3))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, –2); (–2, 4); (4, 1); (–12, 5); (0, –7); (1, 3); (8, 2); (3, 0); (23, 1).<br><br>
@@ -2589,9 +2487,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, А
@@ -2604,57 +2509,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, А: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > 10) or (t > А)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, А AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > 10) or (t > А):
+if (s > 10) or (t > A):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, А;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -2663,9 +2544,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2678,57 +2566,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >>A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -2737,9 +2601,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2752,57 +2623,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > 10) or (t > А)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > 10) or (t > А):
+if (s > 10) or (t > A):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -2811,9 +2658,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2826,57 +2680,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -2885,9 +2715,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2900,34 +2737,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -2936,23 +2748,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -2961,9 +2772,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -2976,57 +2794,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -3035,9 +2829,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3050,58 +2851,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -3110,9 +2886,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3125,34 +2908,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var A, s, t: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM A, s, t AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -3161,23 +2919,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -3186,9 +2943,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3201,57 +2965,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -3260,9 +3000,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3275,34 +3022,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -3311,23 +3033,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -3336,9 +3057,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3351,57 +3079,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -3410,9 +3114,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -3424,30 +3135,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if s mod 9 = k
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s MOD 9 = k THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s % 9 == k:
@@ -3455,22 +3145,21 @@ if s % 9 == k:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s % 9 == k)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 9 = k
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (9, 0); (10, 10); (18, 9); (22, 4); (27, 3); (12, 9); (29, 2); (4, 2); (3, 3).<br><br>
@@ -3479,9 +3168,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3494,57 +3190,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -3553,9 +3225,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3568,34 +3247,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var A, s, t: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -3604,23 +3258,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -3629,9 +3282,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -3643,32 +3303,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t: integer;
-begin
- readln(s);
- readln(t);
- if not ((s >= 5) and (t < 3))
-  then
-writeln('YES')
-  else
- writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF NOT (s >= 5 AND t < 3) THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 if not ((s >= 5) and (t < 3)):
@@ -3676,22 +3313,21 @@ if not ((s >= 5) and (t < 3)):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if !((s >= 5) && (t < 3))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not ((s >= 5) and (t < 3))
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, –2); (5, 3); (14, 1); (–12, 5); (5, –7); (10, 3); (8, 2); (3, 0); (23, 9).<br><br>
@@ -3700,9 +3336,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3715,34 +3358,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -3751,23 +3369,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -3776,9 +3393,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -3791,57 +3415,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > 10) or (t > А)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > 10) or (t > А):
+if (s > 10) or (t > A):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -3850,9 +3450,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -3864,30 +3471,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t: integer;
-begin
-readln(s);
- readln(t);
- if (s < -2) or not (t < 4)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF s < -2 OR NOT t < 4 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 if (s < -2) or not (t < 4):
@@ -3895,22 +3481,21 @@ if (s < -2) or not (t < 4):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if ((s < -2) || !(t < 4))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s < -2) or not (t < 4)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, 5); (–2, 4); (4, 1); (–11, –5); (3, –7); (1, 8); (8, 2); (3, 0); (23, 1).<br><br>
@@ -3919,9 +3504,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -3933,8 +3525,19 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if (s > -3) and not (t > 5):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t: integer;
 begin
  readln(s);
@@ -3944,42 +3547,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF s > -3 AND NOT t > 5 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-if (s > -3) and not (t > 5):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if ((s >-3) && !(t > 5))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–3, 5); (–2, 2); (–1, –3); (1, 0); (–4, –7); (2, 3); (3, 5); (5, –3); (6, –7).<br><br>
@@ -3988,9 +3558,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4003,57 +3580,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -4062,9 +3615,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4077,57 +3637,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -4136,9 +3672,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4151,58 +3694,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -4211,9 +3729,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -4225,30 +3750,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if (s > 6) and (k > 6)
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s > 6 AND k > 6 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s > 6 and k > 6:
@@ -4256,22 +3760,21 @@ if s > 6 and k > 6:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s > 6 && k > 6)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s > 6) and (k > 6)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (1, 1); (7, 9); (8, –12); (6, 6); (8, 11); (–10, -12); (–10, 11); (7, 1); (12, 7).<br><br>
@@ -4280,9 +3783,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -4294,30 +3804,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t: integer;
-begin
- readln(s);
- readln(t);
- if not((s < -4) and (t >=3 ))
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF NOT (s < -4 AND t >= 3) THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 if not ((s < -4) and (t >= 3)):
@@ -4325,22 +3814,21 @@ if not ((s < -4) and (t >= 3)):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if !((s < -4) && (t >= 3))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if not((s < -4) and (t >= 3))
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–5, –2); (5, 3); (–14, 3); (–12, 5), (5, –7); (10, 3); (–4, 3); (3, 0); (–4, 9).<br><br>
@@ -4349,9 +3837,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4364,57 +3859,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > А) or (t > 11)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > А) or (t > 11):
+if (s > A) or (t > 11):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -4423,9 +3894,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, А
@@ -4438,57 +3916,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, А: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > 10) or (t > А)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, А AS INTEGER
-INPUT s
-INPUT t
-INPUT А
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > 10) or (t > А):
+if (s > 10) or (t > A):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, А;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -4497,9 +3951,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -4511,8 +3972,19 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if (s > 10) or (t > 10):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t: integer;
 begin
  readln(s);
@@ -4522,42 +3994,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF s > 10 OR t > 10 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-if (s > 10) or (t > 10):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if (s > 10 || t > 10)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -4566,9 +4005,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4581,57 +4027,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -4640,9 +4062,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -4654,8 +4083,19 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if (s > 5) or not (t < 3):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t: integer;
 begin
  readln(s);
@@ -4665,42 +4105,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF s > 5 OR NOT t < 3 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-if (s > 5) or not (t < 3):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if ((s > 5) || !(t < 3))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, –2); (–2, 4); (4, 1); (–12, 5); (0, –7); (1, 3); (8, 2); (3, 0); (23, 1).<br><br>
@@ -4709,9 +4116,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4724,57 +4138,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -4783,9 +4173,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4798,57 +4195,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > А) or (t > 11)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > А) or (t > 11):
+if (s > A) or (t > 11):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -4857,9 +4230,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4872,34 +4252,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -4908,23 +4263,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -4933,9 +4287,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -4948,34 +4309,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -4984,23 +4320,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -5009,9 +4344,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5024,57 +4366,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -5083,9 +4401,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5098,34 +4423,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -5134,48 +4434,9 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
-<br>
-Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
-(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
-Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
-    answer: `13`
-},
-{
-    text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
-алг
-нач
-  цел s, t, A
-  ввод s
-  ввод t
-  ввод A
-  если s > A или t > 12
-    то вывод "YES"
-    иначе вывод "NO"
-  все
-кон
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
@@ -5186,20 +4447,42 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
+</td>
+</tr>
+</table>
+<br>
+Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
+(13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
+Укажите <b>наибольшее целое</b> значение параметра А, при котором для указанных входных данных программа напечатает «YES» <b>семь раз</b>.`,
+    answer: `13`
+},
+{
+    text: `<b>Впишите правильный ответ.</b><br><br>
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+алг
+нач
+  цел s, t, A
+  ввод s
+  ввод t
+  ввод A
+  если s > A или t > 12
+    то вывод "YES"
+    иначе вывод "NO"
+  все
+кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -5208,23 +4491,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -5233,9 +4515,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5248,57 +4537,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -5307,9 +4572,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5322,57 +4594,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > А) or (t > 11)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > А) or (t > 11):
+if (s > A) or (t > 11):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -5381,9 +4629,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -5395,8 +4650,19 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if not (s > -4) or (t < 3):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t: integer;
 begin
  readln(s);
@@ -5406,42 +4672,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF NOT s > -4 OR t < 3 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-if not (s > -4) or (t < 3):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if (!(s > -4) || (t < 3))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, –2); (5, 3); (14, 1); (–12, 5), (5, 7); (10, 3); (8, 2); (3, 0); (–4, 9).<br><br>
@@ -5450,9 +4683,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5465,34 +4705,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -5501,23 +4716,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -5526,9 +4740,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -5540,30 +4761,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if (s < 6) and (k < 6)
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s < 6 AND k < 6 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s < 6 and k < 6:
@@ -5571,22 +4771,21 @@ if s < 6 and k < 6:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s < 6 && k < 6)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s < 6) and (k < 6)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (1, 1); (7, 9); (8, –12); (6, 6); (3, 11); (–10, –12); (–10, 11); (7, 1); (12, 7).<br><br>
@@ -5595,9 +4794,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5610,8 +4816,20 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 12):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
@@ -5622,45 +4840,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > A) or (t > 12):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -5669,9 +4851,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -5683,30 +4872,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if s mod 7 = k
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s MOD 7 = k THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s % 7 == k:
@@ -5714,22 +4882,21 @@ if s % 7 == k:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s % 7 == k)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 7 = k
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (2, 2); (7, 0); (14, 10); (22, 1); (10, 3); (12, 1); (9, 2); (5, 1); (2, 5).<br><br>
@@ -5738,9 +4905,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5753,57 +4927,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -5812,9 +4962,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5827,34 +4984,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -5863,23 +4995,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -5888,9 +5019,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -5903,57 +5041,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -5962,9 +5076,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -5976,30 +5097,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t: integer;
-begin
-readln(s);
- readln(t);
- if (s < 4) and not (t < 2)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF s < 4 AND NOT t < 2 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 if (s < 4) and not (t < 2):
@@ -6007,22 +5107,21 @@ if (s < 4) and not (t < 2):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if ((s < 4) && !(t < 2))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t: integer;
+begin
+ readln(s);
+ readln(t);
+ if (s < 4) and not (t < 2)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (0, 2); (–1, 0); (2, 3); (4, 2); (3, 1); (–2, 7); (10, –2); (5, 4); (–7, 11).<br><br>
@@ -6031,9 +5130,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6046,57 +5152,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > 10) or (t > A):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > 10) or (t > А)
+ if (s > 10) or (t > A)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > 10) or (t > А):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -6105,9 +5187,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6120,34 +5209,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -6156,23 +5220,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -6181,9 +5244,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6196,57 +5266,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -6255,9 +5301,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6270,34 +5323,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -6306,23 +5334,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -6331,9 +5358,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6346,57 +5380,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -6405,9 +5415,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6420,57 +5437,33 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > 10) or (t > А)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > 10 OR t > А THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > 10) or (t > А):
+if (s > 10) or (t > A):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > 10 || t > А)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > 10) or (t > A)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (1, 2); (11, 2); (1, 12); (11, 12); (–11, –12); (–11, 12); (–12, 11); (10, 10); (10, 5).<br><br>
@@ -6479,9 +5472,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -6493,30 +5493,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if s mod 5 = k
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s MOD 5 = k THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s % 5 == k:
@@ -6524,22 +5503,21 @@ if s % 5 == k:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s % 5 == k)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 5 = k
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (1, 2); (5, 0); (18, 3); (21, 1); (10, 2); (12, 1); (9, 4); (5, 5); (3, 3).<br><br>
@@ -6548,9 +5526,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6563,34 +5548,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -6599,23 +5559,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -6624,9 +5583,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -6638,30 +5604,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if (s < 6) and (k > 6)
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s < 6 AND k > 6 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s < 6 and k > 6:
@@ -6669,22 +5614,21 @@ if s < 6 and k > 6:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s < 6 && k > 6)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s < 6) and (k > 6)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (1, 11); (5, 9); (8, –12); (6, 6); (3, 11); (–10, –12); (–10, 11); (7, 1); (–12, 7). <br><br>
@@ -6693,9 +5637,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6708,34 +5659,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -6744,23 +5670,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -6769,9 +5694,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6784,57 +5716,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > А) or (t > 11)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > А) or (t > 11):
+if (s > A) or (t > 11):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -6843,9 +5751,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -6858,34 +5773,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -6894,23 +5784,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -6919,9 +5808,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -6933,30 +5829,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if s mod 6 = k
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s MOD 6 = k THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s % 6 == k:
@@ -6964,22 +5839,21 @@ if s % 6 == k:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s % 6 == k)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if s mod 6 = k
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (6, 6); (7, 1); (16, 10); (20, 2); (10, 3); (12, 2); (2, 2); (0, 6); (4, 5).<br><br>
@@ -6988,9 +5862,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7003,57 +5884,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -7062,9 +5919,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7077,34 +5941,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -7113,23 +5952,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -7138,9 +5976,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7153,34 +5998,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -7189,23 +6009,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -7214,9 +6033,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7229,34 +6055,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -7265,23 +6066,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -7290,9 +6090,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t
@@ -7304,8 +6111,19 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+if not ((s <= 2) and (t < 3)):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t: integer;
 begin
  readln(s);
@@ -7315,42 +6133,9 @@ begin
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t AS INTEGER
-INPUT s
-INPUT t
-IF NOT(s <= 2 AND t < 3) THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-if not ((s <= 2) and (t < 3)):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t;
-   cin >> s;
-   cin >> t;
-   if (!(s <= 2 && t < 3))
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (2, –2); (5, 3); (–4, 1); (–12, 5), (5, –7); (10, 3); (–8, 12); (3, 0); (2, 3).<br><br>
@@ -7359,9 +6144,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, k
@@ -7373,30 +6165,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, k: integer;
-begin
- readln(s);
- readln(k);
- if (s > 6) and (k < 6)
-   then writeln('YES')
-   else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM k, s AS INTEGER
-INPUT s
-INPUT k
-IF s > 6 AND k < 6 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-END IF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 k = int(input())
 if s > 6 and k < 6:
@@ -7404,22 +6175,21 @@ if s > 6 and k < 6:
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
- int s, k;
- cin >> s;
- cin >> k;
- if (s > 6 && k < 6)
-    cout << "YES" << endl;
- else
-    cout << "NO" << endl;
- return 0;
-}
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, k: integer;
+begin
+ readln(s);
+ readln(k);
+ if (s > 6) and (k < 6)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и k вводились следующие пары чисел:<br>
 (1, 1); (7, 0); (8, –12); (6, 6); (3, 11); (–10, –12); (10, 2); (7, 1); (12, 6).<br><br>
@@ -7428,9 +6198,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7443,34 +6220,9 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -7479,23 +6231,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -7504,9 +6255,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7519,57 +6277,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+s = int(input())
+t = int(input())
+A = int(input())
+if (s > A) or (t > 11):
+    print("YES")
+else:
+    print("NO")
+</pre>
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 var s, t, A: integer;
 begin
  readln(s);
  readln(t);
  readln(A);
- if (s > А) or (t > 11)
+ if (s > A) or (t > 11)
   then writeln('YES')
   else writeln('NO')
 end.
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
-s = int(input())
-t = int(input())
-A = int(input())
-if (s > А) or (t > 11):
-    print("YES")
-else:
-    print("NO")
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
-</pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -7578,9 +6312,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7593,34 +6334,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -7629,23 +6345,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
@@ -7654,9 +6369,16 @@ int main() {
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7669,57 +6391,33 @@ int main() {
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
-readln(s);
-readln(t);
-readln(A);
-if (s > А) or (t > 11)
-  then writeln('YES')
-  else writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > А OR t > 11 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
-if (s > А) or (t > 11):
+if (s > A) or (t > 11):
     print("YES")
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main(){
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > А || t > 11)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 11)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (–9, 11); (2, 7); (5, 12); (2, –2); (7, –9); (12, 6); (9, –1); (7, 11); (11, –5).<br><br>
@@ -7728,9 +6426,16 @@ int main(){
 },
 {
     text: `<b>Впишите правильный ответ.</b><br><br>
-Ниже приведена программа, записанная на пяти языках программирования.<br><br>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Алгоритмический язык
+Ниже приведена программа, записанная на трёх языках программирования.<br><br>
+<table border="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="vertical-align: top; width: 33%;"><b>Алгоритмический язык</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Python</b></td>
+<td style="vertical-align: top; width: 33%;"><b>Паскаль</b></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 алг
 нач
   цел s, t, A
@@ -7743,34 +6448,9 @@ int main(){
   все
 кон
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Паскаль
-var s, t, A: integer;
-begin
- readln(s);
- readln(t);
- readln(A);
- if (s > A) or (t > 12)
-  then
-    writeln('YES')
-  else
-    writeln('NO')
-end.
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Бейсик
-DIM s, t, A AS INTEGER
-INPUT s
-INPUT t
-INPUT A
-IF s > A OR t > 12 THEN
-  PRINT "YES"
-ELSE
-  PRINT "NO"
-ENDIF
-</pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-Python
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
 s = int(input())
 t = int(input())
 A = int(input())
@@ -7779,23 +6459,22 @@ if (s > A) or (t > 12):
 else:
     print("NO")
 </pre>
-<pre style='color:#a7f3d0; background:#0f0f11; padding:10px; border-radius:5px; font-family: monospace;'>
-C++
-#include <iostream>
-using namespace std;
-
-int main() {
-   int s, t, A;
-   cin >> s;
-   cin >> t;
-   cin >> A;
-   if (s > A || t > 12)
-     cout << "YES" << endl;
-   else
-     cout << "NO" << endl;
-   return 0;
- }
+</td>
+<td style="vertical-align: top; background: #0f0f11; border-radius: 5px;">
+<pre style="color: #a7f3d0; background: #0f0f11; padding: 10px; border-radius: 5px; font-family: monospace; margin: 0;">
+var s, t, A: integer;
+begin
+ readln(s);
+ readln(t);
+ readln(A);
+ if (s > A) or (t > 12)
+  then writeln('YES')
+  else writeln('NO')
+end.
 </pre>
+</td>
+</tr>
+</table>
 <br>
 Было проведено 9 запусков программы, при которых в качестве значений переменных s и t вводились следующие пары чисел:<br>
 (13, 2); (11, 12); (–12, 12); (2, –2); (–10, –10); (6, –5); (2, 8); (9, 10); (1, 13).<br><br>
